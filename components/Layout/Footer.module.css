@@ -1,0 +1,53 @@
+.footer {
+  margin: 2em auto;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer hr {
+  width: 100%;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -0.8em 0em;
+}
+
+.socials {
+  display: flex;
+  gap: 2em;
+}
+
+.socialsitem {
+  background: linear-gradient(to right, #a770ef, #1029ba, #cf8bf3);
+  background-size: 200% 200%;
+  animation: gradient 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 1);
+  transition: ease-in 0.2s;
+}
+
+.socialsitem:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}

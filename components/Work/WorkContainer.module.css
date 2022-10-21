@@ -1,0 +1,5 @@
+.wrapper {
+  max-height: 40em;
+  overflow-y: scroll;
+  padding-right: 1.2em;
+}

@@ -1,0 +1,120 @@
+.container {
+  height: 320px;
+  padding: 0.2em 2em;
+  margin: 2em 0;
+  width: 100%;
+  background: #f4f4f4;
+  border: solid 1px rgba(45, 45, 45, 0.32);
+  border-radius: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.content {
+  font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content .image {
+  width: 400px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.2em;
+  transition: ease-in 0.2s;
+}
+
+.content .image:hover {
+  scale: 1.05;
+  box-shadow: rgba(38, 57, 77, 0.419) 0px 20px 30px -10px;
+}
+
+.content .body {
+  margin-top: -60px;
+  margin-left: 60px;
+
+  max-width: 60%;
+  min-width: 60%;
+  font-size: 16px;
+}
+
+.link {
+  margin-top: 1em;
+  margin-left: auto;
+  transition: ease-in 0.2;
+}
+
+.link :hover {
+  font-weight: 700;
+}
+
+.link a {
+  font-weight: 300;
+  transition: ease-in-out 0.5;
+}
+
+.link a :hover {
+  font-weight: 700;
+}
+
+.stacks {
+  display: grid;
+  grid-template: 40px / auto auto auto;
+  margin-top: -1em;
+  max-width: 80%;
+}
+
+.stack {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    height: 260px;
+  }
+  .header {
+    width: 280px;
+  }
+  .content .image {
+    width: 280px;
+    height: 140px;
+  }
+
+  .content .body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .content .image {
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content .body {
+    display: none;
+  }
+}

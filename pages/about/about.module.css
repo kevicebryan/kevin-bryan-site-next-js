@@ -1,0 +1,53 @@
+.container {
+  min-height: 76vh;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.left {
+  max-width: 48%;
+  width: 48%;
+}
+
+.left p {
+  max-width: 400px;
+}
+
+.left .image {
+  width: 400px;
+  height: 480px;
+  background: rgb(228, 228, 228);
+  margin-bottom: 26px;
+  margin-top: 20px;
+  background-size: cover;
+}
+
+.left a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #646464;
+}
+
+.right {
+  max-width: 48%;
+  width: 48%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2em;
+}
+
+.grouptitle {
+  margin-bottom: 0.4em;
+}
+
+.groupitems p {
+  margin-bottom: -0.8em;
+  font-weight: 400;
+}

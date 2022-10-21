@@ -1,0 +1,31 @@
+.hero {
+  font-family: "Roboto";
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hero img {
+  margin-top: -1.6em;
+}
+.hero .bottom {
+  text-align: center;
+}
+
+.hero .bottom .job {
+  font-weight: 400;
+  font-size: 16px;
+}
+.hero .bottom .location {
+  margin-top: -1em;
+  font-weight: 300;
+  font-size: 16px;
+}
