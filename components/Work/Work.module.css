@@ -57,16 +57,12 @@
 }
 
 .link :hover {
-  font-weight: 700;
+  color: rgb(101, 101, 101);
 }
 
 .link a {
   font-weight: 300;
   transition: ease-in-out 0.5;
-}
-
-.link a :hover {
-  font-weight: 700;
 }
 
 .stacks {

@@ -13,11 +13,11 @@ const Footer = () => {
         <div className={classes.socials}>
           {/* TODO: Add actual ref links */}
           <a
-            href="https://drive.google.com/file/d/1Jmf4ZpKtk9Em2xy48muTjSHq4NQifWm_/view?usp=sharing"
+            href="https://github.com/kevicebryan"
             target="_blank"
             className={classes.socialsitem}
           >
-            Resume
+            GitHub
           </a>
           <a
             href="https://www.instagram.com/kkevinbbryan/"

@@ -1,6 +1,17 @@
+import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import classes from "./about.module.css";
+
 const About = () => {
+  const [img, setImg] = useState(`url(${"static/assets/about/me_2.jpg"})`);
+
+  const handleMouseEnter = () => {
+    setImg(`url(${"static/assets/about/me_1.jpg"})`);
+  };
+  const handleMouseLeave = () => {
+    setImg(`url(${"static/assets/about/me_2.jpg"})`);
+  };
+
   return (
     <Layout>
       <div className={classes.container}>
@@ -13,8 +24,10 @@ const About = () => {
           </p>
           <div
             className={classes.image}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             style={{
-              backgroundImage: `url(${"static/assets/about/me_2.jpg"})`,
+              backgroundImage: img,
             }}
           ></div>
           <a
@@ -37,10 +50,18 @@ const About = () => {
           <div className={classes.group}>
             <p className={classes.grouptitle}>Experience</p>
             <div className={classes.groupitems}>
-              <p>Content Creator @ Bina Nusantara Computer Club</p>
+              <p>
+                Director of Photography @{" "}
+                <a href="https://www.filemagz.com/author/kevin-bryan/">
+                  Filemagz
+                </a>
+              </p>
               <br />
               <small>Sep 2021 - Sep 2022</small>
-              <p>Content Creator @ Bina Nusantara Computer Club</p>
+              <p>
+                Content Creator @{" "}
+                <a href="https://bncc.net/">Bina Nusantara Computer Club</a>
+              </p>
               <br />
               <small>Sep 2021 - Sep 2022</small>
             </div>

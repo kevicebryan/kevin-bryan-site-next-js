@@ -7,8 +7,9 @@ const WORK_LIST = [
     year: "2022",
     image: "static/assets/work_images/w3b-scholar.png",
     bodyTop:
-      "A blog website, to help educate Indonesian about Web3, NFT, and the Metaverse in hope to build and develop more Web3 Developers in Indonesia.",
-    bodyBottom: "",
+      "A blog website, where users can share articles to help educate Indonesian about Web3, NFT, and the Metaverse in hope to build and develop more Web3 Developers in Indonesia.",
+    bodyBottom:
+      "I build this site together with my team during Informatics Festival 2022, an annual web building competition. My role on this project was mostly on the front end, building the article page, and its functionality such as pagination and searching.",
     stack: ["NextJS", "CSS Style Component", "Firebase"],
     url: "https://w3b-scholar.vercel.app/",
     id: 1,
