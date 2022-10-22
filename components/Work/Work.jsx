@@ -8,7 +8,7 @@ const Work = (props) => {
         <p>{props.title}</p>
       </div>
       <div className={classes.content}>
-        <a href={props.url} target="_blank">
+        <a href={props.url}>
           <div
             className={classes.image}
             style={{ backgroundImage: `url(${props.image})` }}
@@ -17,16 +17,16 @@ const Work = (props) => {
 
         <div className={classes.body}>
           <div className={classes.link}>
-            <a href={props.url} target="_blank">
-              👉 Check it out! 👈
-            </a>
+            <a href={props.url}>👉 Check it out! 👈</a>
           </div>
           <p>{props.bodyTop}</p>
           <p>{props.bodyBottom}</p>
           <p>This site is built using:</p>
           <div className={classes.stacks}>
             {props.stack.map((s) => (
-              <p className={classes.stack}>⚙️ {s}</p>
+              <p className={classes.stack} key={classes.stack}>
+                ⚙️ {s}
+              </p>
             ))}
           </div>
         </div>

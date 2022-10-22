@@ -1,26 +1,25 @@
+import { useState } from "react";
 import classes from "./Hero.module.css";
 
 const Hero = () => {
-  function onHover() {
-    const img = document.getElementById("menuImg");
-    img.src = "static/assets/kb_c_2.png";
-  }
+  const [img, setImg] = useState(`/static/assets/kb_c_1.png`);
 
-  function offHover() {
-    const img = document.getElementById("menuImg");
-    img.src = "static/assets/kb_c_1.png";
-  }
+  const handleMouseEnter = () => {
+    setImg(`/static/assets/kb_c_2.png`);
+  };
+  const handleMouseLeave = () => {
+    setImg(`/static/assets/kb_c_1.png`);
+  };
 
   return (
     <div className={classes.hero}>
-      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
       <h5>WEB DEVELOPER</h5>
       <img
-        src="/static/assets/kb_c_1.png"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        src={img}
         alt="kevinbryan"
         id="menuImg"
-        onMouseOver={onHover}
-        onMouseOut={offHover}
       />
       <div className={classes.bottom}>
         <p className={classes.job}>

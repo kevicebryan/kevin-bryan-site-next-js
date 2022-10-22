@@ -17,10 +17,10 @@ const About = () => {
       <div className={classes.container}>
         <div className={classes.left}>
           <p>
-            I’m Kevin Bryan, a Computer Science Student at BINUS University, and
-            I love building websites! <br /> Currently, I’m trying to learn new
-            tech and expand my creativities in building a unique website with
-            its own stories and user interaction.
+            I&#39;m Kevin Bryan, a Computer Science Student at BINUS University,
+            and I love building websites! <br /> Currently, I’m trying to learn
+            new tech and expand my creativities in building a unique website
+            with its own stories and user interaction.
           </p>
           <div
             className={classes.image}
@@ -30,10 +30,7 @@ const About = () => {
               backgroundImage: img,
             }}
           ></div>
-          <a
-            href="https://drive.google.com/file/d/1Jmf4ZpKtk9Em2xy48muTjSHq4NQifWm_/view"
-            target="_blank"
-          >
+          <a href="https://drive.google.com/file/d/1Jmf4ZpKtk9Em2xy48muTjSHq4NQifWm_/view">
             Download my curriculum vitae here 👈
           </a>
         </div>
@@ -80,7 +77,7 @@ const About = () => {
             <div className={classes.groupitems}>
               <p>Passion is everything.</p>
               <p>Never stop learning.</p>
-              <p>Nobody's perfect.</p>
+              <p>Nobody&#39;s perfect.</p>
             </div>
           </div>
         </div>
