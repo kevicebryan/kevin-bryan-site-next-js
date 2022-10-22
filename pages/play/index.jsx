@@ -1,11 +1,9 @@
 import Layout from "../../components/Layout/Layout";
 
-const Play = () => {
+export default function Play(props) {
   return (
     <Layout>
       <div></div>
     </Layout>
   );
-};
-
-export default Play;
+}
