@@ -39,7 +39,7 @@ const WORK_LIST = [
   },
   {
     title: "Filetechno",
-    year: "2021/22",
+    year: "2021 - 22",
     image: "static/assets/work_images/filetechno.png",
     bodyTop:
       "A social media project, currently educating over 4000+ followers on programming and UI/UX design information.",

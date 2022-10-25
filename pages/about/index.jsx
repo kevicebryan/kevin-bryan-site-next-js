@@ -20,7 +20,7 @@ const About = () => {
             I&#39;m Kevin Bryan, a Computer Science Student at BINUS University,
             and I love building websites! <br /> Currently, I’m trying to learn
             new tech and expand my creativities in building a unique website
-            with its own stories and user interaction.
+            with its own stories and user interaction. 🌸🍃
           </p>
           <div
             className={classes.image}

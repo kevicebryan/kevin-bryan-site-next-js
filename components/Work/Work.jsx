@@ -4,7 +4,7 @@ const Work = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.header}>
-        <p>{props.year}</p>
+        <p className={classes.year}>{props.year}</p>
         <p>{props.title}</p>
       </div>
       <div className={classes.content}>
@@ -16,16 +16,13 @@ const Work = (props) => {
         </a>
 
         <div className={classes.body}>
-          <div className={classes.link}>
-            <a href={props.url}>👉 Check it out! 👈</a>
-          </div>
           <p>{props.bodyTop}</p>
           <p>{props.bodyBottom}</p>
-          <p>This site is built using:</p>
+          <p>Tools used on this project 👇</p>
           <div className={classes.stacks}>
             {props.stack.map((s) => (
               <p className={classes.stack} key={classes.stack}>
-                ⚙️ {s}
+                <span className={classes.highlighted}>{s}</span>
               </p>
             ))}
           </div>
