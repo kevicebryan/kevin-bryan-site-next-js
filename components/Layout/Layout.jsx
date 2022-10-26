@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Layout = (props) => {
   return (
-    <>
+    <div className={classes.container}>
       <Head>
         <title>Kevin Bryan - Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -14,7 +14,7 @@ const Layout = (props) => {
       <Navbar />
       {props.children}
       <Footer />
-    </>
+    </div>
   );
 };
 
