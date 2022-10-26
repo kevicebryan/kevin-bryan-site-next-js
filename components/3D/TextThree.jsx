@@ -26,7 +26,7 @@ export default function TextThree({ margin = 0.8 }) {
           size={0.3}
           font="/static/assets/font/Roboto_Bold.json"
         >
-          how's your day
+          how&#39;s your day
           <meshStandardMaterial color="#3f3f3f80" />
         </Text3D>
       </Center>

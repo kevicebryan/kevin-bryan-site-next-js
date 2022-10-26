@@ -33,7 +33,7 @@ export default function Play(props) {
           <a href="https://www.tokopedia.com/kurubu">
             <h1>Stop by 🫂 my Shop </h1>
           </a>
-          <p>I'm selling my secondhand items here</p>
+          <p>I&#39;m selling my secondhand items here</p>
         </div>
       </div>
     </Layout>
