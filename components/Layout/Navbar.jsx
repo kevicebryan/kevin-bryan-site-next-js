@@ -16,7 +16,7 @@ const Navbar = () => {
       </Link>
       <img src="/static/assets/k.png" alt="k-logo" onClick={logoClickHandler} />
       <div className={classes.right}>
-        <Link href="/">
+        <Link href="/play">
           <a className={classes.navitem}>Play</a>
         </Link>
         <Link href="/about">

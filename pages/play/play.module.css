@@ -1,0 +1,27 @@
+.content {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 114px;
+  margin-top: 1em;
+  z-index: 0;
+}
+
+.title .o {
+  color: rgba(63, 63, 63, 0.515);
+  font-size: 72px;
+  z-index: 0;
+}
+
+.o :hover {
+  font-size: 60px;
+}
+
+.canvas canvas {
+  min-height: 40vh;
+}

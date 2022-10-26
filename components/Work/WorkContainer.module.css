@@ -1,5 +1,6 @@
 .wrapper {
-  max-height: 40em;
+  max-height: 47vh;
+  min-height: 47vh;
   overflow-y: scroll;
   padding-right: 1.2em;
 }

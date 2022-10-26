@@ -1,5 +1,5 @@
 .container {
-  min-height: 76vh;
+  min-height: 80vh;
   display: flex;
   justify-content: space-between;
   font-weight: 300;
@@ -50,4 +50,10 @@
 .groupitems p {
   margin-bottom: -0.8em;
   font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  .left .image {
+    display: none;
+  }
 }
