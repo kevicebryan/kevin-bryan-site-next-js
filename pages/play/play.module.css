@@ -23,5 +23,39 @@
 }
 
 .canvas canvas {
-  min-height: 40vh;
+  min-height: 60vh;
+  max-width: 80vw;
+}
+
+.kurubu {
+  text-align: center;
+  transition: ease-in 0.2s;
+  margin-top: 6em;
+  font-size: small;
+}
+
+.kurubu h1:hover {
+  scale: 1.1;
+}
+
+.kurubu p {
+  font-weight: 200;
+}
+
+.kurubu h1 {
+  font-weight: 300;
+  margin-bottom: -0.32em;
+  transition: ease-in 0.2s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
