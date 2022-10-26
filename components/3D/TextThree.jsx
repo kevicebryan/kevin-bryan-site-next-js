@@ -2,7 +2,7 @@ import { Center, MeshDistortMaterial, Text3D } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import AnimatedSphere from "./AnimatedSphere";
 
-export default function TextThree({ margin = 0.8 }) {
+export default function TextThree({ margin = 0.4 }) {
   const { width, height } = useThree((state) => state.viewport);
   return (
     <>
