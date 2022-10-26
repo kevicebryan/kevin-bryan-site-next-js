@@ -12,7 +12,7 @@ const Layout = (props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <div className={classes.container}>{props.children}</div>
+      {props.children}
       <Footer />
     </>
   );
