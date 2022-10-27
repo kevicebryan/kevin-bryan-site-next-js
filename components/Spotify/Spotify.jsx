@@ -6,7 +6,7 @@ export default function Spotify(props) {
       <div className={classes.top}>
         <div className={classes.topImg}></div>
         <div className={classes.topText}>
-          <h5>KB's Mix</h5>
+          <h5>KB&#39;s Mix</h5>
           <p>Crush, Drake, Ka...</p>
         </div>
         <img src="/static/assets/kcircle.png" alt="logo" />
