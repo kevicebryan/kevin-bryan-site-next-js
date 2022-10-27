@@ -8,7 +8,7 @@ const Layout = (props) => {
   return (
     <div className={classes.container}>
       <Head>
-        <title>Kevin Bryan - Portfolio</title>
+        <title>Kevin Bryan</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />

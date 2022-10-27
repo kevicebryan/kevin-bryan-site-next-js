@@ -10,6 +10,7 @@
   font-style: normal;
   display: flex;
   flex-direction: column;
+  transition: ease-in 0.2s;
 }
 
 .header {
@@ -139,8 +140,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .container {
+    width: 64%;
+    align-items: center;
+    margin: 2em auto;
+    height: 220px;
+  }
+
   .header {
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
   }
 
@@ -149,8 +157,42 @@
   }
 
   .content .image {
+    width: 280px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content .body {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
     width: 300px;
-    height: 150px;
+    height: 188px;
+    margin: 2em auto;
+    margin-bottom: 5em;
+  }
+
+  .header {
+    width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .header .year {
+    font-size: smaller;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .content .image {
+    width: 240px;
+    height: 120px;
     background-size: cover;
     background-position: center;
   }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 import classes from "./Hero.module.css";
 
@@ -14,12 +15,15 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <h5>WEB DEVELOPER</h5>
-      <img
+      <Image
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         src={img}
         alt="kevinbryan"
         id="menuImg"
+        width="254"
+        height="196"
+        priority
       />
       <div className={classes.bottom}>
         <p className={classes.job}>
