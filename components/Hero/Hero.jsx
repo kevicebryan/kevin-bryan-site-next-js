@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import classes from "./Hero.module.css";
+import Tilt from "react-parallax-tilt";
 
 const Hero = () => {
   const [img, setImg] = useState(`/static/assets/kb_c_1.png`);
@@ -15,16 +16,18 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <h5>WEB DEVELOPER</h5>
-      <Image
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        src={img}
-        alt="kevinbryan"
-        id="menuImg"
-        width="254"
-        height="196"
-        priority
-      />
+      <Tilt tiltEnable={true}>
+        <Image
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          src={img}
+          alt="kevinbryan"
+          id="menuImg"
+          width="254"
+          height="196"
+          priority
+        />
+      </Tilt>
       <div className={classes.bottom}>
         <p className={classes.job}>
           Computer Science Student @ BINUS UNIVERSITY

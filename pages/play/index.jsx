@@ -6,6 +6,7 @@ import classes from "./play.module.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import TextThree from "../../components/3D/TextThree";
+import Spotify from "../../components/Spotify/Spotify";
 
 export default function Play() {
   return (
@@ -28,6 +29,7 @@ export default function Play() {
             <TextThree />
           </Suspense>
         </Canvas>
+        {/* <Spotify /> */}
         <div className={classes.kurubu}>
           <a href="https://www.tokopedia.com/kurubu">
             <h1>Stop by 🫂 my Shop </h1>

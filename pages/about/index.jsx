@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import classes from "./about.module.css";
+import Tilt from "react-parallax-tilt";
 
 const About = () => {
   const [img, setImg] = useState(`url(${"static/assets/about/me_2.jpg"})`);
@@ -22,14 +23,16 @@ const About = () => {
             new tech and expand my creativities in building a unique website
             with its own stories and user interaction. 🌸🍃
           </p>
-          <div
-            className={classes.image}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              backgroundImage: img,
-            }}
-          ></div>
+          <Tilt glareEnable={true} glareColor={"#f5f5f5"}>
+            <div
+              className={classes.image}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                backgroundImage: img,
+              }}
+            ></div>
+          </Tilt>
           <a href="https://drive.google.com/file/d/1Jmf4ZpKtk9Em2xy48muTjSHq4NQifWm_/view">
             Download my curriculum vitae here 👈
           </a>
