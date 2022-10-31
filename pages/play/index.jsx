@@ -12,6 +12,13 @@ export default function Play() {
   return (
     <Layout>
       <div className={classes.content}>
+        <iframe
+          src="https://my.spline.design/my3davatar-af24a57fab0bbd0414d0c28f23417298/"
+          frameborder="0"
+          width="100%"
+          height="100%"
+          className={classes.spline}
+        ></iframe>
         <Canvas
           className={classes.canvas}
           orthographic

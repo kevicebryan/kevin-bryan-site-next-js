@@ -34,3 +34,10 @@
   margin-bottom: -0.32em;
   transition: ease-in 0.2s;
 }
+
+.spline {
+  height: 420px;
+  scale: 0.8;
+  margin-top: -8em;
+  margin-bottom: -4em;
+}
