@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <h5>WEB DEVELOPER</h5>
-      <Tilt tiltEnable={true}>
+      <Tilt tiltEnable={true} glareEnable={true} glareColor={"#f5f5f5"}>
         <Image
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
