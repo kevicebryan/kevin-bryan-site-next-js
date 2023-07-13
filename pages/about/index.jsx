@@ -90,11 +90,11 @@ const About = () => {
             </div>
           </div>
           <div className={classes.group}>
-            <p className={classes.grouptitle}>My Values</p>
+            <p className={classes.grouptitle}>Who am I?</p>
             <div className={classes.groupitems}>
-              <p>Passion is everything.</p>
-              <p>Never stop learning.</p>
-              <p>Nobody&#39;s perfect.</p>
+              <p>an observer.</p>
+              <p>a thinker.</p>
+              <p>a developer.</p>
             </div>
           </div>
         </div>
