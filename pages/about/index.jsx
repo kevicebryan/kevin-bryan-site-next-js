@@ -16,12 +16,12 @@ const About = () => {
     <Layout>
       <div className={classes.container}>
         <div className={classes.left}>
+          <p>Hi!</p>
           <p>
-            I&#39;m Kevin Bryan, a Computer Science Student at BINUS University,
-            and I love building websites! <br /> Currently, I’m trying to learn
-            new tech and expand my creativities in building a unique website
-            with its own stories and user interaction. 🌸🍃
+            I&#39;m Kevin, a tech enthusiast with high aspiration to keep on
+            growing and learn new stuff. 🌸🍃
           </p>
+
           <div
             className={classes.image}
             onMouseEnter={handleMouseEnter}
@@ -38,11 +38,11 @@ const About = () => {
           <div className={classes.group}>
             <p className={classes.grouptitle}>Skills</p>
             <div className={classes.groupitems}>
-              <p>iOS Mobile Development</p>
-              <p>Web Development (React, Next, Express, Laravel, etc.)</p>
-              <p>Database (SQL, MongoDB)</p>
-              <p>UI Design (Figma)</p>
-              <p>Video Editing (Premiere Pro)</p>
+              <p>~ iOS Mobile Development</p>
+              <p>~ Web Development (React, Next, Express, Laravel, etc.)</p>
+              <p>~ Database (SQL, MongoDB)</p>
+              <p>~ UI Design (Figma)</p>
+              <p>~ Video Editing (Premiere Pro)</p>
             </div>
           </div>
           <div className={classes.group}>

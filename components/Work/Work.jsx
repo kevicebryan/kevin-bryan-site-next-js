@@ -18,7 +18,7 @@ const Work = (props) => {
         <div className={classes.body}>
           <p>{props.bodyTop}</p>
           <p>{props.bodyBottom}</p>
-          <p>Tools used on this project 👇</p>
+          <p className={classes.tool}>Tools used:</p>
           <div className={classes.stacks}>
             {props.stack.map((s) => (
               <p className={classes.stack} key={classes.stack}>
