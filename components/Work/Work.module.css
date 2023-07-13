@@ -6,8 +6,6 @@
   background: #f4f4f4;
   border: solid 1px rgba(45, 45, 45, 0.32);
   border-radius: 16px;
-  font-family: "Roboto";
-  font-style: normal;
   display: flex;
   flex-direction: column;
   transition: ease-in 0.2s;

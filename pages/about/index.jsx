@@ -6,10 +6,10 @@ const About = () => {
   const [img, setImg] = useState(`url(${"static/assets/about/me_2.jpg"})`);
 
   const handleMouseEnter = () => {
-    setImg(`url(${"static/assets/about/me_1.jpg"})`);
+    setImg(`url(${"static/assets/about/me_1.jpeg"})`);
   };
   const handleMouseLeave = () => {
-    setImg(`url(${"static/assets/about/me_2.jpg"})`);
+    setImg(`url(${"static/assets/about/me_2.jpeg"})`);
   };
 
   return (
@@ -38,6 +38,7 @@ const About = () => {
           <div className={classes.group}>
             <p className={classes.grouptitle}>Skills</p>
             <div className={classes.groupitems}>
+              <p>iOS Mobile Development</p>
               <p>Web Development (React, Next, Express, Laravel, etc.)</p>
               <p>Database (SQL, MongoDB)</p>
               <p>UI Design (Figma)</p>
@@ -48,6 +49,22 @@ const About = () => {
             <p className={classes.grouptitle}>Experience</p>
             <div className={classes.groupitems}>
               <p>
+                Junior Developer @{" "}
+                <a href="https://developeracademy.apps.binus.ac.id/">
+                  Apple Developer Academy
+                </a>
+              </p>
+              <br />
+              <small>Mar 2022 - Current</small>
+              <p>
+                Staff & Content Creator @{" "}
+                <a href="https://bncc.net/">Bina Nusantara Computer Club</a>
+              </p>
+              <br />
+              <small>Sep 2021 - Sep 2022</small>
+            </div>
+            <div className={classes.groupitems}>
+              <p>
                 Director of Photography @{" "}
                 <a href="https://www.filemagz.com/author/kevin-bryan/">
                   Filemagz
@@ -56,7 +73,7 @@ const About = () => {
               <br />
               <small>Sep 2021 - Sep 2022</small>
               <p>
-                Content Creator @{" "}
+                Staff & Content Creator @{" "}
                 <a href="https://bncc.net/">Bina Nusantara Computer Club</a>
               </p>
               <br />
