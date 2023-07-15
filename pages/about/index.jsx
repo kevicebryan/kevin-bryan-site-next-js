@@ -55,13 +55,7 @@ const About = () => {
                 </a>
               </p>
               <br />
-              <small>Mar 2022 - Current</small>
-              <p>
-                Staff & Content Creator @{" "}
-                <a href="https://bncc.net/">Bina Nusantara Computer Club</a>
-              </p>
-              <br />
-              <small>Sep 2021 - Sep 2022</small>
+              <small>Mar 2023 - Current</small>
             </div>
             <div className={classes.groupitems}>
               <p>
