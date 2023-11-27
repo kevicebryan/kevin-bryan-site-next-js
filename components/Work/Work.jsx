@@ -5,10 +5,10 @@ const Work = (props) => {
     <div className={classes.container}>
       <div className={classes.header}>
         <p className={classes.year}>{props.year}</p>
-        <p>{props.title}</p>
+        <p className={classes.title}>{props.title}</p>
       </div>
       <div className={classes.content}>
-        <a href={props.url}>
+        <a href={props.url} target="_blank">
           <div
             className={classes.image}
             style={{ backgroundImage: `url(${props.image})` }}
