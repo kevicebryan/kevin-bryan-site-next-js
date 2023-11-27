@@ -8,7 +8,7 @@ const Work = (props) => {
         <p className={classes.title}>{props.title}</p>
       </div>
       <div className={classes.content}>
-        <a href={props.url} target="_blank">
+        <a href={props.url}>
           <div
             className={classes.image}
             style={{ backgroundImage: `url(${props.image})` }}
