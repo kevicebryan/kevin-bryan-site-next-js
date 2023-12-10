@@ -1,4 +1,265 @@
 .container {
-  width: 90%;
-  margin: auto;
+  width: 60%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+
+  margin-top: 100px;
+}
+
+.hero {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: scroll;
+  border: 1px solid rgb(41, 41, 41);
+  border-radius: 20px;
+}
+
+.box.hor {
+  width: 500px;
+}
+
+.box.full {
+  width: 100%;
+}
+
+.box.vert {
+  height: 500px;
+}
+
+.box h1,
+.box h2 {
+  max-width: 100%;
+  font-weight: 500;
+  text-align: center;
+  margin: none;
+}
+
+.box h2 {
+  font-size: 40px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.box h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #252525;
+}
+
+.box .selected {
+  color: white;
+}
+
+.box .rowspaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.rect {
+  background-color: #0029ff1a;
+  width: 85%;
+  height: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 125px;
+}
+
+.rect .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.box .back {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.box .front {
+  position: absolute;
+  z-index: 2;
+}
+
+.box .backText {
+  font-size: 60px;
+  transition: ease-in 0.5s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .backText:hover {
+  transform: scale(0.8);
+  color: white;
+}
+
+.box .backText:hover .shine {
+  transition: color 0.5s ease-in-out;
+  animation: glow 3s infinite;
+  animation-timing-function: ease-in-out; /* Ensure smooth transitions between keyframes */
+
+  color: white;
+}
+
+.shine {
+  transition: color 0.5s ease-in-out;
+  animation: none;
+}
+
+.box .frontText {
+  font-size: 40px;
+  transition: ease-in 0.5s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content h1 {
+  font-weight: 500;
+}
+
+.polaroidContainer {
+  width: 100%;
+  min-height: 500px;
+
+  overflow: visible;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 20px #0080ff; /* Initial and final glow color and size */
+  }
+  50% {
+    text-shadow: 0 0 50px linear-gradient(to right, #0080ff, #fd76ff); /* Gradient glow */
+  }
+  75% {
+    text-shadow: 0 0 20px #fd76ff; /* Final glow color and size */
+  }
+}
+
+/* FOR POLAROID */
+
+.polaroidWrapper {
+  position: absolute;
+  /* adjust later...*/
+  top: 50px;
+  left: 100px;
+  transform: rotate(24deg);
+}
+
+.polaroid {
+  width: 250px;
+  height: 300px;
+  /* background-color: #f5f5f5; */
+
+  background: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.69)
+    ),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(170%) brightness(1000%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.polaroidImage {
+  width: 240px;
+  height: 240px;
+  margin-top: 5px;
+  background-color: black;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.polaroidImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.polaroidText {
+  font-family: "Permanent Marker";
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.polaroid .rowFull {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 240px;
+  overflow: scroll;
+}
+
+.techStacksRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.techStack {
+  height: 20px;
+  width: 20px;
+  background-color: #0029ff;
+  border-radius: 8px;
+}
+
+.caption {
+  max-width: 80%;
 }
