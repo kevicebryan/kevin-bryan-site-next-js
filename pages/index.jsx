@@ -6,6 +6,7 @@ import Tilt from "react-parallax-tilt";
 import Layout from "../components/Layout/Layout";
 // import WorkContainer from "../components/Work/WorkContainer";
 import classes from "./home.module.css";
+import Polaroid from "../components/Polaroid/Polaroid";
 
 export default function Home() {
   // FOR EYE HERO
@@ -20,6 +21,10 @@ export default function Home() {
   const [isBack, setIsBack] = useState(true);
   const handleToggle = () => {
     setIsBack(!isBack);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
   };
 
   return (
@@ -104,23 +109,18 @@ export default function Home() {
           <h1>stuff I've created ✨</h1>
 
           <div className={`${classes.box} ` + classes.polaroidContainer}>
-            <div className={classes.polaroidWrapper}>
-              <Tilt>
-                <div className={classes.polaroid}>
-                  <div className={classes.polaroidImage}>
-                    <img src="" alt="Project Snap.raw" />
-                  </div>
-                  <div className={classes.rowFull}>
-                    <div className={classes.techStacksRow}>
-                      <div className={classes.techStack}></div>
-                      <div className={classes.techStack}></div>
-                      <div className={classes.techStack}></div>
-                    </div>
-                    <div className={classes.polaroidText}>project Name</div>
-                  </div>
-                </div>
-              </Tilt>
-            </div>
+            {POLAROID_ITEMS.map((polaroid, index) => (
+              <Polaroid
+                key={index}
+                title={polaroid.title}
+                year={polaroid.year}
+                img={polaroid.img}
+                description={polaroid.description}
+                stack={polaroid.stack}
+                url={polaroid.url}
+                styling={polaroid.style}
+              />
+            ))}
           </div>
         </div>
 
@@ -131,3 +131,114 @@ export default function Home() {
     </Layout>
   );
 }
+
+class PolaroidItem {
+  constructor(
+    title = "",
+    year = 0,
+    description = "",
+    img = "",
+    stack = [],
+    url = "",
+    style = {}
+    // zIndex = 1
+  ) {
+    this.title = title;
+    this.year = year;
+    this.description = description;
+    this.img = img;
+    this.stack = stack;
+    this.url = url;
+    this.style = style;
+  }
+}
+
+const POLAROID_ITEMS = [
+  new PolaroidItem(
+    "Wordle Clone",
+    2022,
+    "",
+    "static/assets/work_images/wordle.png",
+    [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+    ],
+    "static/assets/work_images/missionA1.png",
+    { bottom: "-8em", left: "32%", rotate: "-5" }
+  ),
+  new PolaroidItem(
+    "W3B Scholar",
+    2022,
+    "",
+    "static/assets/work_images/w3b-scholar.png",
+    [
+      "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
+      "https://yt3.googleusercontent.com/GsP5Yvc5jOSop4SJf_75wdOYaEbO-7ZyYhnARodAGRnEMh-OQjGPGzUz2ZtzsHPtqFyHGvmbEtI=s900-c-k-c0x00ffffff-no-rj",
+    ],
+    "static/assets/work_images/missionA1.png",
+    { top: "4em", left: "25%", rotate: "0" }
+  ),
+  new PolaroidItem(
+    "My Rail Travel",
+    2023,
+    "",
+    "static/assets/work_images/my-rail-travel.gif",
+    [
+      "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
+      "https://static.wikia.nocookie.net/ipod/images/4/44/Reality_Composer_macOS_icon.png",
+      "https://i.pinimg.com/originals/d2/ae/e4/d2aee4bcb7a6f5ec4c1d288bc8c04951.png",
+    ],
+    "static/assets/work_images/missionA1.png",
+    { bottom: "-5em", right: "15%", rotate: "8" }
+  ),
+  new PolaroidItem(
+    "Lug N Loaded",
+    2023,
+    "",
+    "static/assets/work_images/lug-n-loaded.png",
+    [
+      "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
+      "https://miro.medium.com/v2/resize:fit:572/1*-lPVtpH51_QwfwHJEPqLKw.png",
+    ],
+    "static/assets/work_images/missionA1.png",
+    { top: "1.5em", right: "22%", rotate: "-10" }
+  ),
+  new PolaroidItem(
+    "Flanner",
+    2023,
+    "",
+    "static/assets/work_images/flanner.png",
+    [
+      "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
+      "https://w7.pngwing.com/pngs/106/569/png-transparent-core-data-software-framework-database-apple-angle-fruit-nut-electric-blue.png",
+    ],
+    "static/assets/work_images/missionA1.png",
+    { bottom: "-1em", right: "-2em", rotate: "24" }
+  ),
+
+  new PolaroidItem(
+    "Pikolo",
+    2023,
+    "",
+    "static/assets/work_images/pikolo.png",
+    [
+      "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
+      "https://w7.pngwing.com/pngs/106/569/png-transparent-core-data-software-framework-database-apple-angle-fruit-nut-electric-blue.png",
+      "https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format",
+    ],
+    "",
+    { top: "50%", left: "10%", rotate: "12" }
+  ),
+  new PolaroidItem(
+    "Mission: A1",
+    2023,
+    "",
+    "static/assets/work_images/missionA1.png",
+    [
+      "https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png",
+      "https://cdn.pixabay.com/photo/2021/10/20/01/20/mac-os-logo-6724894_1280.png",
+    ],
+    "",
+    { top: "20%", left: "-3em", rotate: "-20" }
+  ),
+];
