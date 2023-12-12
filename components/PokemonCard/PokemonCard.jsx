@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function PokemonCard(props) {
   return (
     <Tilt>
-      <div className={classes.cardContainer}>
+      <div className={`${classes.cardContainer} ${classes.cardShine}`}>
         <div className={classes.cardBody}>
           <div className={classes.cardHeader}>
             <div className={classes.left}>

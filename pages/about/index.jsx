@@ -65,7 +65,7 @@ const About = () => {
 
           <h4
             data-tooltip-id="ada-tooltip"
-            data-tooltip-content="Developed various iOS and macOS apps and games."
+            data-tooltip-content="Developed various iOS/macOS apps and games."
             data-tooltip-place="left"
           >
             Junior Developer 
