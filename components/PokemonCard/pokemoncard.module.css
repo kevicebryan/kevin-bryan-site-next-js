@@ -1,0 +1,286 @@
+.cardContainer {
+  width: 250px;
+  height: 350px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    300deg,
+    #ffffff,
+    #c8fef5,
+    #f4c2fc,
+    #ffffff,
+    #9c969d
+  );
+  background-size: 300% 300%;
+  animation: gradient-animation 10s ease infinite;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: ease-in-out 0.5s;
+}
+
+.cardContainer:hover {
+  filter: contrast(110%);
+}
+
+.cardContainer:hover .cardBody {
+  /* opacity: 0.99; */
+  background: linear-gradient(
+    360deg,
+    rgb(0, 255, 208) 10%,
+    rgb(255, 255, 255) 20%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(37, 37, 37, 0.25) 60%,
+    #3447ee 75%,
+    rgba(150, 170, 242, 0.20634191176470584) 100%
+  );
+  transition: ease-in 2s;
+  background-size: 250% 250%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+.cardBody {
+  width: 95%;
+  height: 95%;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(37, 37, 37, 1) 60%,
+    #1029ba 75%,
+    rgba(16, 255, 211, 0.396) 85%,
+    rgba(150, 170, 242, 0.20634191176470584) 100%
+  );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  transition: ease-in 2s;
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(119, 119, 119, 1) 46%,
+    rgba(213, 213, 213, 1) 98%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 16px 8px 16px 8px;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: -3px;
+  margin-top: -2px;
+
+  z-index: 5;
+}
+
+.cardHeader .left {
+  width: 64%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 46%,
+    rgba(213, 213, 213, 1) 79%
+  );
+  border-radius: 16px 8px 16px 8px;
+  margin-left: -3px;
+
+  display: flex;
+  align-items: center;
+}
+
+.cardHeader .left p {
+  margin-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #373737;
+}
+
+.cardHeader .right {
+  font-size: smaller;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #4c62e1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+
+.cardName {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(219, 219, 219, 1) 48%,
+    rgba(255, 255, 255, 1) 67%
+  );
+
+  margin-top: -15px;
+  z-index: 1;
+  transition: ease-in-out 2s;
+}
+
+.cardName h1 {
+  margin-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 7.5%;
+  font-size: 25px;
+  color: rgb(40, 40, 40);
+
+  transition: ease-in-out 1s;
+}
+
+.imgContainer {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  /* background-color: rgba(0, 208, 255, 0.261); */
+  border-radius: 8px;
+  z-index: 1;
+  transition: ease-in 0.5s;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 100%;
+  transform: scale(0.95);
+  transition: ease-in 0.5s;
+  border-radius: 12px;
+  filter: saturate(0.85);
+}
+
+.cardContainer:hover .imgContainer img {
+  opacity: 100%;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: ease-in 0.5s;
+
+  filter: none;
+  box-shadow: 2px 2px #ffffff;
+  filter: brightness(90%);
+}
+
+/* .imgContainer .bgImage {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+} */
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: white;
+
+  z-index: 2;
+  /* background-color: #0000002d; */
+  padding: 2px;
+  border-radius: 2px;
+  margin-top: 75%;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.cardContainer:hover .factContainer {
+  filter: brightness(110%) contrast(110%);
+  transition: ease-out 0.5s;
+}
+
+.factContainer {
+  transition: ease-out 0.5s;
+
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(50, 50, 50) 0%,
+    rgba(186, 186, 186, 1) 57%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(194, 194, 194, 1) 96%
+  );
+  font-size: 6px;
+
+  border-radius: 20px 4px 20px 4px;
+  z-index: 1;
+  bottom: 2.5%;
+  right: -2%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.fact {
+  width: 90%;
+  height: 100%;
+  border-radius: 20px 4px 20px 4px;
+  background: rgb(0, 24, 255);
+  background: linear-gradient(
+    360deg,
+    rgb(76, 94, 250) 5%,
+    rgba(165, 230, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 45%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(156, 225, 255, 1) 75%,
+    rgb(61, 126, 255) 95%
+  );
+}
+
+.fact p {
+  margin-left: 15px;
+  margin-top: 5px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

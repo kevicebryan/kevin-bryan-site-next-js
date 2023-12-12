@@ -1,4 +1,119 @@
-.container {
+.aboutBox {
+  width: 75%;
+  height: 700px;
+
+  border-radius: 20px;
+  border: 1px dashed rgb(119, 119, 119);
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  position: relative;
+}
+
+.pokemonCardWrapper {
+  position: absolute;
+
+  top: 32%;
+  left: 5%;
+  transition: ease-in 0.25s;
+  z-index: 10;
+  transform: scale(1.15) rotate(-10deg);
+}
+
+.pokemonCardWrapper:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+
+.aboutNote {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.aboutNote.skill {
+  left: 37.5%;
+  top: 25%;
+  width: 300px;
+
+  z-index: 2;
+}
+
+.aboutNote.exp {
+  background-color: #0029ff;
+  color: white;
+  top: 5%;
+  right: 2.5%;
+
+  height: 85%;
+
+  z-index: 3;
+}
+
+.aboutNote.edu {
+  background-color: #011a97;
+  color: white;
+  bottom: 2%;
+  right: -2.5%;
+  width: 500px;
+  height: 150px;
+
+  z-index: 4;
+}
+
+.aboutNote h3 {
+  opacity: 0.5;
+  text-align: center;
+}
+
+.aboutNote.edu h3 {
+  text-align: start;
+}
+
+.aboutNote h4 {
+  font-size: 16px;
+}
+
+.aboutNote h5 {
+  font-size: 12px;
+  margin-top: -1.5em;
+  margin-bottom: 0.5em;
+}
+
+.aboutNote .caption {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.aboutNote .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  transform: scale(1.5) rotate(5deg);
+  position: absolute;
+  left: 12.5%;
+
+  z-index: 1;
+}
+
+.logo .circle {
+  position: absolute;
+  right: 0;
+}
+
+.pokemonCardWrapper:hover .logo circle {
+  fill: white;
+  color: white;
+}
+
+/* .container {
   min-height: 80vh;
   display: flex;
   justify-content: space-between;
@@ -66,4 +181,4 @@
   .container {
     font-size: large;
   }
-}
+} */
