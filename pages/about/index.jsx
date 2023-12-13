@@ -103,7 +103,11 @@ const About = () => {
           <h5>MySQL, MongoDB</h5>
         </div>
       </div>
-      <a href="https://drive.google.com/file/d/1-aVzldLPururT8ptuQ03oRHRN2SOd5fN/view?usp=sharing">
+      <a
+        href="https://drive.google.com/file/d/1-aVzldLPururT8ptuQ03oRHRN2SOd5fN/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Download my curriculum vitae here 👈
       </a>{" "}
       {/* <div className={classes.container}>

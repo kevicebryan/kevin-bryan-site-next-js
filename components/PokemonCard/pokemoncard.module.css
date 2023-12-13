@@ -179,7 +179,7 @@
 
 .cardContainer:hover .imgContainer img {
   opacity: 100%;
-  border-radius: 100px;
+  /* border-radius: 1; */
   transform: scale(1);
   transition: ease-in 0.5s;
   filter: brightness(105%) contrast(90%) saturate(1.1) opacity(0.94);
