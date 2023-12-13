@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Eye from "../components/Eye/eye";
+import Eye from "../components/Eye/Eye";
 
 // import Hero from "../components/Hero/Hero";
 import Layout from "../components/Layout/Layout";
