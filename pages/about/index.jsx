@@ -109,7 +109,8 @@ const About = () => {
         rel="noopener noreferrer"
       >
         Download my curriculum vitae here 👈
-      </a>{" "}
+      </a>
+
       {/* <div className={classes.container}>
         <div className={classes.left}>
           <p>Hi!</p>
