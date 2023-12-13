@@ -1,34 +1,14 @@
 .container {
-  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: monospace;
+
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  color: white;
+
   display: flex;
   flex-direction: column;
-}
-
-.container ::selection {
-  background: rgba(236, 184, 255, 0.6);
-}
-
-.container ::-webkit-scrollbar {
-  width: 6px;
-}
-
-.container ::-webkit-scrollbar-track {
-  background: #f4f4f4;
-  border-radius: 4px;
-}
-
-.container ::-webkit-scrollbar-thumb {
-  background: #1c1c1c29;
-  border-radius: 4px;
-}
-
-.container ::-webkit-scrollbar-thumb:hover {
-  background: #1c1c1cc7;
-  border-radius: 4px;
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    width: 100%;
-  }
+  justify-content: center;
+  align-items: center;
 }

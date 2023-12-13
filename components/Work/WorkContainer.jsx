@@ -11,7 +11,7 @@ const WORK_LIST = [
     bodyBottom:
       "A 2.5 month project, where I worked as the Tech Lead working with 2 other engineers, 2 designers & a project manager.\nResponisble in making sure the code is clean & maintainable, fix conflicts, & h&s down worked on 4 of the 8 minigames avaialble in the game.\nAlso worked on notable mechanics such as, NPC AI movement, First Person Player Movement, & more.",
     stack: ["Unity", "MacOS", "C#"],
-    url: "#",
+    url: "https://www.linkedin.com/posts/bryan-kevin_unity-unity3d-macos-activity-7135505729792196608-Lr6e?utm_source=share&utm_medium=member_desktop",
     id: 9,
   },
   {
@@ -47,7 +47,7 @@ const WORK_LIST = [
     bodyBottom:
       "Worked on the main mechanic, the drag n dropping items, logic of items fitting in the luggage & its boundary logic, & the game win condition. \nAlso worked on  multithreaading, & implementation of GameKit for the quick match feature. \nWorked as a Tech Lead & Project Manager on this project using Jira implementing SCRUM workflow.",
     stack: ["SpriteKit", "GameKit", "SwiftUI"],
-    url: "https://drive.google.com/file/d/1eSCJ6wbN6RkXBK3X1TjY1bfG3UpAhjTv/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1eSCJ6wbN6RkXBK3X1TjY1bfG3UpAhjTv/view?usp=sharing",
     id: 6,
   },
   {

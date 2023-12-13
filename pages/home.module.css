@@ -1,4 +1,217 @@
 .container {
-  width: 90%;
-  margin: auto;
+  width: 60%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+
+  margin-top: 100px;
+}
+
+.hero {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: scroll;
+  border: 1px solid rgb(41, 41, 41);
+  border-radius: 20px;
+
+  transition: ease-in-out 0.5s;
+}
+
+.box:hover {
+  border: 1px solid rgb(97, 97, 97);
+}
+
+.box.hor {
+  width: 500px;
+}
+
+.box.full {
+  width: 100%;
+}
+
+.box.vert {
+  height: 500px;
+}
+
+.box h1,
+.box h2 {
+  max-width: 100%;
+  font-weight: 500;
+  text-align: center;
+  margin: none;
+}
+
+.box h2 {
+  font-size: 40px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.box h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #252525;
+  transition: ease-in 0.5s;
+}
+
+.box .selected {
+  background: linear-gradient(to right, #a770ef, #1029ba, #cf8bf3);
+  background-size: 200% 200%;
+  animation: gradient 2s ease-in-out infinite;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  color: white;
+  transition: ease-in 0.5s;
+}
+
+.box:hover .selected {
+  color: rgba(0, 0, 0, 0);
+}
+.box:hover h1 {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.box .rowspaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.rect {
+  background-color: #0029ff1a;
+  width: 85%;
+  height: 85%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 125px;
+}
+
+.rect .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.box .back {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.box .front {
+  position: absolute;
+  z-index: 2;
+}
+
+.box .backText {
+  font-size: 60px;
+  transition: ease-in 0.5s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .backText:hover {
+  transform: scale(0.8);
+  color: white;
+}
+
+.box .backText:hover .shine {
+  transition: color 0.5s ease-in-out;
+  animation: glow 3s infinite;
+  animation-timing-function: ease-in-out; /* Ensure smooth transitions between keyframes */
+
+  color: white;
+}
+
+.shine {
+  transition: color 0.5s ease-in-out;
+  animation: none;
+}
+
+.box .frontText {
+  font-size: 40px;
+  transition: ease-in 0.5s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content h1 {
+  font-weight: 500;
+}
+
+.polaroidContainer {
+  width: 100%;
+  min-height: 500px;
+
+  overflow: visible;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 12px #0080ff; /* Initial and final glow color and size */
+  }
+  50% {
+    text-shadow: 0 0 20px linear-gradient(to right, #0080ff, #fd76ff); /* Gradient glow */
+  }
+  75% {
+    text-shadow: 0 0 12px #fd76ff; /* Final glow color and size */
+  }
+}
+
+.caption {
+  max-width: 80%;
+  opacity: 0.25;
+  margin-top: 100px;
 }
