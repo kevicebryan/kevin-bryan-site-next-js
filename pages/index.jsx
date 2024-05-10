@@ -79,7 +79,7 @@ export default function Home() {
         </div>
 
         <div
-          className={`${classes.box} ${classes.full}`}
+          className={`${classes.box} ${classes.full} ${classes.quote}`}
           onPointerEnter={handleToggle}
           onPointerLeave={handleToggle}
         >
@@ -135,9 +135,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={classes.caption}>
-          sorry mobile viewers, I didn't design this to be responsive YET. :_)
-        </div>
+        <div className={classes.caption}></div>
       </div>
     </Layout>
   );
