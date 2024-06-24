@@ -1,7 +1,2 @@
-This is my personal/portofolio website 😀
-
-
-access it here 👇
-
-
+Kevin Bryan's Portfolio Website:
 https://kevinbryan.vercel.app/
