@@ -120,6 +120,79 @@
   color: white;
 }
 
+@media screen and (max-width: 1080px) {
+  .aboutNote.skill {
+    left: 10%;
+    top: 35%;
+    width: 250px;
+    z-index: 2;
+  }
+
+  .aboutNote.edu {
+    background-color: #011a97;
+    color: white;
+    bottom: -4%;
+    right: -2.5%;
+    width: 500px;
+    height: 150px;
+    z-index: 4;
+  }
+
+  .aboutNote.exp {
+    background-color: #0029ff;
+    color: white;
+    top: 5%;
+    right: -8%;
+    height: 50%;
+    z-index: 3;
+  }
+
+  .pokemonCardWrapper {
+    position: absolute;
+    top: -8%;
+    left: -5%;
+    transition: ease-in 0.25s;
+    z-index: 10;
+    transform: scale(0.8) rotate(-10deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutBox {
+    height: 300px;
+  }
+  .aboutNote.skill {
+    transform: scale(0.5);
+    top: 0%;
+    left: -10%;
+  }
+
+  .aboutNote.edu {
+    transform: scale(0.5);
+    top: 70%;
+    left: -30%;
+    height: fit-content;
+  }
+
+  .aboutNote.exp {
+    transform: scale(0.5);
+    top: -40%;
+    left: 15%;
+    height: fit-content;
+  }
+
+  .pokemonCardWrapper {
+    transform: scale(0.4);
+    top: -40%;
+    left: -30%;
+    height: fit-content;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
 /* .container {
   min-height: 80vh;
   display: flex;
