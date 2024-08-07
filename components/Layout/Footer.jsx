@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className={classes.row}>
-        <p>©Kevin Bryan 2022</p>
+        <p>✱ Kevin Bryan 2024</p>
         <div className={classes.socials}>
           {/* TODO: Add actual ref links */}
           <a
