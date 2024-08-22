@@ -7,14 +7,14 @@ body {
 
   color: white;
   background-color: #1c1c1c;
-  cursor: url("/static/assets/cursor/custom-cursor.png"), auto;
+  cursor: url("/static/assets/cursor/arrow.svg"), auto;
   overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  cursor: url("/static/assets/cursor/custom-cursor-pointer.png"), pointer;
+  cursor: url("/static/assets/cursor/pointer.svg"), pointer;
 }
 
 /* 

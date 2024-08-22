@@ -23,7 +23,7 @@
   cursor: pointer;
 
   transition: ease-in-out 0.3s;
-  cursor: url("/static/assets/cursor/custom-cursor-pointer.png"), pointer;
+  cursor: url("/static/assets/cursor/pointer.svg"), pointer;
 }
 
 .nav .navitem:hover {

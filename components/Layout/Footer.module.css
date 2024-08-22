@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 
+.footer .socialsitem a {
+  color: inherit;
+  text-decoration: none;
+  cursor: url("/static/assets/cursor/pointer.svg"), pointer;
+}
+
 .footer hr {
   width: 100%;
 }
@@ -37,6 +43,7 @@
 
 .socialsitem:hover {
   color: rgba(0, 0, 0, 0);
+  cursor: url("/static/assets/cursor/pointer.svg"), pointer;
 }
 
 @keyframes gradient {
