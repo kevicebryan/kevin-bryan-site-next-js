@@ -9,12 +9,6 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 1080px) {
-  .container {
-    gap: 20px;
-  }
-}
-
 .hero {
   width: 100%;
 
@@ -23,15 +17,7 @@
   align-items: center;
   /* justify-content: center; */
   justify-content: space-between;
-  gap: 100px;
-}
-
-@media screen and (max-width: 1080px) {
-  .hero {
-    flex-direction: column;
-    gap: 20px;
-    margin-top: -50px;
-  }
+  gap: 40px;
 }
 
 .box {
@@ -57,7 +43,7 @@
 }
 
 .box.hor {
-  width: 500px;
+  width: 100%;
 }
 
 .box.full {
@@ -159,54 +145,58 @@
   z-index: 2;
 }
 
-.box .backText {
-  font-size: 60px;
-  transition: ease-in 0.5s;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.box .backText:hover {
-  transform: scale(0.8);
-  color: white;
-}
-
-.box .backText:hover .shine {
-  transition: color 0.5s ease-in-out;
-  animation: glow 3s infinite;
-  animation-timing-function: ease-in-out; /* Ensure smooth transitions between keyframes */
-
-  color: white;
-}
-
 .shine {
   transition: color 0.5s ease-in-out;
   animation: none;
 }
 
-.box .frontText {
-  font-size: 40px;
-  transition: ease-in 0.5s;
+.dgText {
+  width: fit-content;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  font-size: 24px;
+
+  padding: 40px;
 }
 
-@media screen and (max-width: 1440px) {
-  .box .backText {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .box .frontText {
-    font-size: 20px;
-    text-align: center;
+.dgText:hover {
+  .small {
+    transition: ease-in-out 0.5s;
+    opacity: 1;
+    color: #f9d60c;
   }
 }
 
-@media screen and (max-width: 850px) {
-  .quote {
-    display: none;
+.dgText .small {
+  font-size: 14px;
+  color: #0080ff;
+  opacity: 0.5;
+  transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -50px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box.hor {
+    width: 100%;
+  }
+
+  .box .rowspaced {
+    justify-content: center;
+    gap: 4px;
   }
 }
 

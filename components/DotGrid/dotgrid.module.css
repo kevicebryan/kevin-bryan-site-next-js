@@ -1,0 +1,47 @@
+.gridContainer {
+  display: grid;
+  place-content: center;
+  padding: 3rem; /* Equivalent to py-12 */
+  padding-left: 2rem; /* Equivalent to px-8 */
+  padding-right: 2rem; /* Equivalent to px-8 */
+  position: relative;
+}
+
+.gridWrapper {
+  display: grid;
+  width: fit-content;
+}
+
+.gridItem {
+  border-radius: 9999px; /* Equivalent to rounded-full */
+  padding: 0.5rem; /* Equivalent to p-2 */
+  transition-property: background-color; /* Equivalent to transition-colors */
+  transition-duration: 150ms;
+}
+
+.gridItem:hover {
+  background-color: #133f9f; /* Equivalent to hover:bg-slate-600 */
+}
+
+.dotPoint {
+  height: 0.8rem; /* Equivalent to h-2 */
+  width: 0.8rem; /* Equivalent to w-2 */
+  border-radius: 9999px; /* Equivalent to rounded-full */
+  background: linear-gradient(
+    246deg,
+    #0083cd -2.16%,
+    #133f9f 35.82%,
+    #001024 84.04%
+  );
+  opacity: 0.5;
+}
+
+.gridItem:hover .dotPoint {
+  border-radius: 100px;
+  background: linear-gradient(
+    246deg,
+    #0083cd -2.16%,
+    #133f9f 35.82%,
+    #001024 84.04%
+  );
+}

@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout";
 // import WorkContainer from "../components/Work/WorkContainer";
 import classes from "./home.module.css";
 import Polaroid from "../components/Polaroid/Polaroid";
+import DotGrid from "../components/DotGrid/dotgrid";
 
 export default function Home() {
   // FOR EYE HERO
@@ -31,7 +32,7 @@ export default function Home() {
       <link
         href="https://fonts.googleapis.com/css?family=Permanent Marker"
         rel="stylesheet"
-      ></link>
+      />
       <div
         className={classes.container}
         onPointerEnter={() => {
@@ -46,7 +47,7 @@ export default function Home() {
           <div className={classes.box}>
             <div className={classes.rowspaced}>
               <h2>Hi,</h2>
-              <h2>It's</h2>
+              <h2>I'm</h2>
             </div>
             <h1>
               <span className={classes.selected}>KEV</span>
@@ -83,24 +84,10 @@ export default function Home() {
           onPointerEnter={handleToggle}
           onPointerLeave={handleToggle}
         >
-          <div
-            className={`${isBack ? classes.back : classes.front} ${
-              classes.backText
-            }`}
-          >
-            OB
-            <div className={classes.shine}>S</div>
-            ERVE, T<div className={classes.shine}>H</div>
-            <div className={classes.shine}>I</div>
-            <div className={classes.shine}>N</div>
-            K, COD <div className={classes.shine}>E</div>.
-          </div>
-          <div
-            className={`${!isBack ? classes.back : classes.front} ${
-              classes.frontText
-            }`}
-          >
-            that's pretty much what i do.
+          <DotGrid className={classes.dotGrid} />
+          <div className={classes.dgText}>
+            Turning coffee into code, and bugs into features since... <br />{" "}
+            <span className={classes.small}> well, this morning.</span>
           </div>
         </div>
 
@@ -181,11 +168,11 @@ const POLAROID_ITEMS = [
     "W3B Scholar",
     2022,
     "a website for web3 enthusiast to get to know more about web3, blockchian, and the metaverse.",
-    "FrontEnd Developer",
+    "Frontend Developer",
     "static/assets/work_images/w3b-scholar.png",
     [
       "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
-      "https://yt3.googleusercontent.com/GsP5Yvc5jOSop4SJf_75wdOYaEbO-7ZyYhnARodAGRnEMh-OQjGPGzUz2ZtzsHPtqFyHGvmbEtI=s900-c-k-c0x00ffffff-no-rj",
+      "https://www.svgrepo.com/show/353735/firebase.svg",
     ],
     "https://w3b-scholar.vercel.app/",
     { top: "4em", left: "25%", rotate: "0" }
