@@ -19,10 +19,12 @@
     "react-parallax-tilt": "^1.7.68",
     "react-tooltip": "^5.25.0",
     "react-use": "^17.4.2",
+    "styled-components": "^6.1.12",
     "three": "^0.145.0",
     "webpack": "^5.89.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1"
   }

@@ -1,7 +1,5 @@
 import classes from "./polaroid.module.css";
 import Tilt from "react-parallax-tilt";
-import Link from "next/link";
-import { Tooltip } from "react-tooltip";
 
 export default function Polaroid(props) {
   const { styling } = props;
@@ -27,7 +25,7 @@ export default function Polaroid(props) {
             {props.description}
           </div>
 
-          <a href={`${props.url}`} target="_blank" rel="noopener noreferrer">
+          <a href={`/projects/${props.id}`} rel="noopener noreferrer">
             <div className={classes.polaroidImage}>
               <img src={props.img} alt="Project Snap.raw" />
             </div>
