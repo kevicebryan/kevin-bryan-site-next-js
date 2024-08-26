@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../../../components/Layout/Layout";
 import { POLAROID_ITEMS } from "../../../common/projects";
-import { PageContainer } from "./style";
 import ProjectBoard from "../../../components/ProjectDetail/ProjectBoard";
 import ProjectInfo from "../../../components/ProjectDetail/ProjectInfo";
 
@@ -45,3 +44,14 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
+
+import styled from "styled-components";
+
+const PageContainer = styled.div`
+  position: relative;
+  width: 90%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+`;
