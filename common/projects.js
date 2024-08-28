@@ -97,7 +97,7 @@ export const POLAROID_ITEMS = [
     "https://drive.google.com/file/d/1eSCJ6wbN6RkXBK3X1TjY1bfG3UpAhjTv/view?usp=sharing",
     { top: "1.5em", right: "22%", rotate: "-10" },
     "/static/assets/work_images/lug-n-loaded.png",
-    "/static/assets/work_images/lug-n-loaded.png"
+    "/static/assets/work_images/lug-n-loaded/lugNLoaded-2.png"
   ),
   new PolaroidItem(
     5,
@@ -133,7 +133,7 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/pikolo-cash-flow-manager/id6463812788",
     { top: "50%", left: "10%", rotate: "12" },
     "/static/assets/work_images/pikolo.png",
-    "/static/assets/work_images/pikolo.png"
+    "/static/assets/work_images/pikolo/pikolo-2.png"
   ),
   new PolaroidItem(
     7,
@@ -150,7 +150,7 @@ export const POLAROID_ITEMS = [
     ["Unity", "SwiftUI", "C#"],
     "https://www.linkedin.com/posts/bryan-kevin_unity-unity3d-macos-activity-7135505729792196608-Lr6e?utm_source=share&utm_medium=member_desktop",
     { top: "20%", left: "-3em", rotate: "-20" },
-    "/static/assets/work_images/missionA1.png",
-    "/static/assets/work_images/missionA1.png"
+    "/static/assets/work_images/missionA1/missionA1-1.png",
+    "/static/assets/work_images/missionA1/missionA1-2.png"
   ),
 ];

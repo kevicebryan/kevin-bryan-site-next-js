@@ -13,6 +13,7 @@ export const BoardContainer = styled.div`
   img {
     width: 95%;
     height: auto;
+    max-height: 90%;
     object-fit: contain;
     filter: brightness(0.8);
     transition: ease-in-out 0.2s;
@@ -27,13 +28,7 @@ export const ImageContainer1 = styled.div`
   width: 320px;
   height: 240px;
   position: absolute;
-  background: linear-gradient(
-    246deg,
-    #0083cd -2.16%,
-    #133f9f 35.82%,
-    #001024 84.04%
-  );
-
+  background: white;
   top: 15%;
   left: -12px;
 
@@ -44,10 +39,12 @@ export const ImageContainer1 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
   &:hover {
     transform: rotate(-5deg) scale(1.28);
     z-index: 2;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
   }
 `;
 
@@ -56,10 +53,7 @@ export const ImageContainer2 = styled.div`
   height: 240px;
 
   position: absolute;
-  background: var(
-    --Martini,
-    linear-gradient(180deg, #fdfc47 8.29%, rgba(36, 254, 65, 0.16) 100%)
-  );
+  background: white;
   bottom: 15%;
   right: -12px;
 
@@ -70,9 +64,11 @@ export const ImageContainer2 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
   &:hover {
     transform: rotate(8deg) scale(1.23);
     z-index: 2;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
   }
 `;
