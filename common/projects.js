@@ -114,7 +114,7 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/flanner/id6463742782",
     { bottom: "-1em", right: "-2em", rotate: "24" },
     "/static/assets/work_images/flanner.png",
-    "/static/assets/work_images/flanner.png"
+    "/static/assets/work_images/flanner/flanner-2.png"
   ),
 
   new PolaroidItem(

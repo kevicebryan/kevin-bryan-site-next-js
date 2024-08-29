@@ -15,12 +15,8 @@ export const BoardContainer = styled.div`
     height: auto;
     max-height: 90%;
     object-fit: contain;
-    filter: brightness(0.8);
+    filter: brightness(0.95);
     transition: ease-in-out 0.2s;
-
-    &:hover {
-      filter: brightness(1);
-    }
   }
 `;
 
@@ -45,6 +41,11 @@ export const ImageContainer1 = styled.div`
     transform: rotate(-5deg) scale(1.28);
     z-index: 2;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+
+    img {
+      filter: brightness(1) saturate(1.1);
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -70,5 +71,10 @@ export const ImageContainer2 = styled.div`
     transform: rotate(8deg) scale(1.23);
     z-index: 2;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+
+    & > img {
+      filter: brightness(1) saturate(1.1);
+      transform: scale(1.1);
+    }
   }
 `;
