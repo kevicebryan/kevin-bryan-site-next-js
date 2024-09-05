@@ -56,7 +56,7 @@ const About = () => {
 
           <h4
             data-tooltip-id="ada-tooltip"
-            data-tooltip-content="Developed & maintained a learning platform used by over 1,6k members."
+            data-tooltip-content="Developed & maintained a learning platform used by over 100.000 members."
             data-tooltip-place="left"
           >
             Software Engineer (FE)
