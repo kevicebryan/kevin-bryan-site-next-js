@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
+  position: relative;
   padding: 32px 24px;
   width: 55%;
   background: linear-gradient(223deg, #1f1f20 2.03%, #111 116.82%);
@@ -36,8 +37,9 @@ export const DateWrapper = styled.div`
 
   & > p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 1.75rem;
 
     & > span {
       font-size: 10px;
@@ -51,16 +53,20 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  z-index: 3;
 
   & > p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 1.25px;
     font-weight: 200;
     opacity: 0.6;
     margin: 0;
+    line-height: 1.75rem;
+    max-width: 90%;
   }
 `;
 
