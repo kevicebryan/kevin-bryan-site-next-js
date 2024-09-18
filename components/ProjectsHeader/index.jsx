@@ -23,7 +23,7 @@ const ProjectsHeader = () => {
     <Wrapper>
       <h1>Kevin's Work Gallery</h1>
       <Cta>
-        <p>Interested in working together? Feel free to </p>
+        <span>Interested in working together? Feel free to </span>
         <ButtonWrapper>
           <ReachOutButton
             onMouseEnter={handleMouseEnter}
@@ -61,13 +61,15 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 12px;
 
-  margin-top: 100px;
-  margin-bottom: 64px;
-
   & > h1 {
     font-weight: 700;
     font-size: 4rem;
     margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    margin-bottom: 24px;
   }
 `;
 
@@ -78,10 +80,17 @@ const Cta = styled.div`
   justify-content: center;
   gap: 4px;
 
-  & > p {
+  & > span {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: 768px) {
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
   }
 `;
 
@@ -90,6 +99,11 @@ const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
 `;
 
 const ReachOutButton = styled.button`
@@ -104,6 +118,11 @@ const ReachOutButton = styled.button`
   transition: ease-in-out 0.2s;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    width: max-content;
+    text-align: left;
+  }
 
   &:hover {
     padding: 12px 24px;

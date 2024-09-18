@@ -9,35 +9,45 @@ import ProjectsHeader from "../../components/ProjectsHeader";
 const Projects = () => {
   return (
     <Layout>
-      <ProjectsHeader />
-      {/* TODO: SEARCH BAR */}
-      {/* TODO: LIST OF PROJECTS*/}
-      <ProjectListWrapper>
-        <ProjectList>
-          {POLAROID_ITEMS.sort((a, b) => b.id - a.id).map(
-            (project) =>
-              project && <ProjectCard key={project.id} {...project} />
-          )}
-        </ProjectList>
-      </ProjectListWrapper>
+      <Wrapper>
+        <ProjectsHeader />
+        {/* TODO: SEARCH BAR */}
+        {/* TODO: LIST OF PROJECTS based on search query*/}
+        <ProjectListWrapper>
+          <ProjectList>
+            {POLAROID_ITEMS.sort((a, b) => b.id - a.id).map(
+              (project) =>
+                project && <ProjectCard key={project.id} {...project} />
+            )}
+          </ProjectList>
+        </ProjectListWrapper>
+      </Wrapper>
     </Layout>
   );
 };
 
 export default Projects;
 
+const Wrapper = styled.div`
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 75vh;
+`;
+
 const ProjectListWrapper = styled.div`
-  width: 95%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 75vh;
 `;
 
 const ProjectList = styled.div`
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 20px;
-  margin-left: auto;
+  margin: 0 auto;
 `;
