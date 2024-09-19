@@ -22,7 +22,11 @@ export default function Polaroid(props) {
             {props.role}
           </div>
           <div className={`${classes.bubble} ${classes.desc}`}>
-            {props.description}
+            {props.description.length > 100 ? (
+              <>{props.description.slice(0, 97)}...</>
+            ) : (
+              props.description
+            )}
           </div>
 
           <a href={`/projects/${props.id}`} rel="noopener noreferrer">

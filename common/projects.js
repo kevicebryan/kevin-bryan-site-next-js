@@ -11,8 +11,9 @@ export class PolaroidItem {
     url = "",
     style = {},
     img1 = "",
-    img2 = ""
+    img2 = "",
     // zIndex = 1
+    thumbnail = ""
   ) {
     this.id = id;
     this.title = title;
@@ -26,6 +27,7 @@ export class PolaroidItem {
     this.style = style;
     this.img1 = img1;
     this.img2 = img2;
+    this.thumbnail = thumbnail;
   }
 }
 
@@ -41,10 +43,11 @@ export const POLAROID_ITEMS = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
     ],
     ["Vanilla Javascript"],
-    "https://kevicebryan.github.io/src/WORDLE_clone/index.html",
+    "https://wordle-clone-by-kevicebryan.vercel.app/",
     { bottom: "-8em", left: "32%", rotate: "-5" },
     "/static/assets/work_images/wordle.png",
-    "/static/assets/work_images/wordle.png"
+    "/static/assets/work_images/wordle.png",
+    "wordle.jpg"
   ),
   new PolaroidItem(
     2,
@@ -61,7 +64,8 @@ export const POLAROID_ITEMS = [
     "https://w3b-scholar.vercel.app/",
     { top: "4em", left: "25%", rotate: "0" },
     "/static/assets/work_images/w3b-scholar.png",
-    "/static/assets/work_images/w3b-scholar.png"
+    "/static/assets/work_images/w3b-scholar.png",
+    "w3b-scholar.jpg"
   ),
   new PolaroidItem(
     3,
@@ -79,10 +83,11 @@ export const POLAROID_ITEMS = [
     "#",
     { bottom: "-5em", right: "15%", rotate: "8" },
     "/static/assets/work_images/my-rail-travel.gif",
-    "/static/assets/work_images/my-rail-travel.gif"
+    "/static/assets/work_images/my-rail-travel.gif",
+    "my-rail-travel.jpg"
   ),
   new PolaroidItem(
-    4,
+    5,
     "Lug N Loaded",
     2023,
     "A heart-pumping, adrenaline-fueled 2D puzzle multiplayer game where you and your friends take on the role of sneaky robbers, racing against time to cram all your stolen loot into a single, unsuspecting luggage.",
@@ -97,10 +102,11 @@ export const POLAROID_ITEMS = [
     "https://drive.google.com/file/d/1eSCJ6wbN6RkXBK3X1TjY1bfG3UpAhjTv/view?usp=sharing",
     { top: "1.5em", right: "22%", rotate: "-10" },
     "/static/assets/work_images/lug-n-loaded.png",
-    "/static/assets/work_images/lug-n-loaded/lugNLoaded-2.png"
+    "/static/assets/work_images/lug-n-loaded/lugNLoaded-2.png",
+    "lug-n-loaded.jpg"
   ),
   new PolaroidItem(
-    5,
+    4,
     "Flanner",
     2023,
     "Family planner, born from the chaos of Apple Developer Academy, where my teammates & I were grouped because we all have our family as the closest people near us, and we'd like to spend more quality time with our loved ones.",
@@ -114,7 +120,8 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/flanner/id6463742782",
     { bottom: "-1em", right: "-2em", rotate: "24" },
     "/static/assets/work_images/flanner.png",
-    "/static/assets/work_images/flanner/flanner-2.png"
+    "/static/assets/work_images/flanner/flanner-2.png",
+    "flanner.jpg"
   ),
 
   new PolaroidItem(
@@ -133,7 +140,8 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/pikolo-cash-flow-manager/id6463812788",
     { top: "50%", left: "10%", rotate: "12" },
     "/static/assets/work_images/pikolo.png",
-    "/static/assets/work_images/pikolo/pikolo-2.png"
+    "/static/assets/work_images/pikolo/pikolo-2.png",
+    "pikolo.jpg"
   ),
   new PolaroidItem(
     7,
@@ -151,6 +159,7 @@ export const POLAROID_ITEMS = [
     "https://www.linkedin.com/posts/bryan-kevin_unity-unity3d-macos-activity-7135505729792196608-Lr6e?utm_source=share&utm_medium=member_desktop",
     { top: "20%", left: "-3em", rotate: "-20" },
     "/static/assets/work_images/missionA1/missionA1-1.png",
-    "/static/assets/work_images/missionA1/missionA1-2.png"
+    "/static/assets/work_images/missionA1/missionA1-2.png",
+    "mission-a1.jpg"
   ),
 ];
