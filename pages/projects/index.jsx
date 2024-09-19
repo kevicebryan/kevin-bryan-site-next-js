@@ -8,7 +8,7 @@ import { POLAROID_ITEMS } from "../../common/projects";
 import ProjectsHeader from "../../components/ProjectsHeader";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-const SearchBar = dynamic(() => import("../../components/Searchbar"));
+const SearchBar = dynamic(() => import("../../components/SearchBar"));
 
 const Projects = () => {
   const [projects, setProjects] = useState(POLAROID_ITEMS);
