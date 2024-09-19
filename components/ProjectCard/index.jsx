@@ -6,7 +6,6 @@ import {
   TextWrapper,
   Thumbnail,
 } from "./style";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 const ProjectCard = ({ id, title, year, role, thumbnail }) => {
