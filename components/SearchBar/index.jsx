@@ -65,6 +65,8 @@ const SearchBar = () => {
   );
 };
 
+export default SearchBar;
+
 const Wrapper = styled.form`
   position: relative;
   display: flex;
@@ -125,5 +127,3 @@ const Button = styled.button`
     }
   }
 `;
-
-export default SearchBar;
