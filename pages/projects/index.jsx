@@ -1,4 +1,5 @@
 "use client";
+
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Layout from "../../components/Layout/Layout";
