@@ -1,13 +1,13 @@
 "use client";
-
+import dynamic from "next/dynamic";
 import styled from "styled-components";
 import Layout from "../../components/Layout/Layout";
 import ProjectCard from "../../components/ProjectCard";
 import { POLAROID_ITEMS } from "../../common/projects";
 import ProjectsHeader from "../../components/ProjectsHeader";
-import SearchBar from "../../components/Searchbar";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+const SearchBar = dynamic(() => import("../../components/Searchbar"));
 
 const Projects = () => {
   const [projects, setProjects] = useState(POLAROID_ITEMS);
