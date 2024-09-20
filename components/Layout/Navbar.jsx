@@ -28,15 +28,27 @@ const Navbar = () => {
             }`}
             data-tooltip-id="about-tooltip"
             data-tooltip-content="get to know more about me, i guess.."
-            data-tooltip-place="right"
+            data-tooltip-place="bottom"
           >
             About
           </div>
         </Link>
       </div>
-
       <div className={classes.right}>
-        <Link href="/play">
+        <Link href="/projects">
+          <div
+            className={`${classes.navitem} ${
+              router.pathname.includes("/projects") ? classes.active : ""
+            }`}
+            data-tooltip-id="play-tooltip"
+            data-tooltip-content="software projects I have worked on"
+            data-tooltip-place="left"
+          >
+            Work
+          </div>
+        </Link>
+
+        {/* <Link href="/play">
           <div
             className={`${classes.navitem} ${
               router.pathname === "/play" ? classes.active : ""
@@ -47,7 +59,7 @@ const Navbar = () => {
           >
             Play
           </div>
-        </Link>
+        </Link> */}
       </div>
       <Tooltip
         id="home-tooltip"

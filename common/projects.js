@@ -11,8 +11,9 @@ export class PolaroidItem {
     url = "",
     style = {},
     img1 = "",
-    img2 = ""
+    img2 = "",
     // zIndex = 1
+    thumbnail = ""
   ) {
     this.id = id;
     this.title = title;
@@ -26,6 +27,7 @@ export class PolaroidItem {
     this.style = style;
     this.img1 = img1;
     this.img2 = img2;
+    this.thumbnail = thumbnail;
   }
 }
 
@@ -34,23 +36,24 @@ export const POLAROID_ITEMS = [
     1,
     "Wordle Clone",
     2022,
-    "worlde created using vanilla JS.",
+    "My Wordle clone created during my university days, using just vanilla JS.",
     "Developer",
     "static/assets/work_images/wordle.png",
     [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
     ],
     ["Vanilla Javascript"],
-    "https://kevicebryan.github.io/src/WORDLE_clone/index.html",
+    "https://wordle-clone-by-kevicebryan.vercel.app/",
     { bottom: "-8em", left: "32%", rotate: "-5" },
     "/static/assets/work_images/wordle.png",
-    "/static/assets/work_images/wordle.png"
+    "/static/assets/work_images/wordle.png",
+    "wordle.jpg"
   ),
   new PolaroidItem(
     2,
     "W3B Scholar",
     2022,
-    "a website for web3 enthusiast to get to know more about web3, blockchian, and the metaverse.",
+    "A web3 enthusiast's paradise where users can discover the latest trends in web3, blockchain, and the metaverse, and share their own experiences with others.",
     "Frontend Developer",
     "static/assets/work_images/w3b-scholar.png",
     [
@@ -61,13 +64,14 @@ export const POLAROID_ITEMS = [
     "https://w3b-scholar.vercel.app/",
     { top: "4em", left: "25%", rotate: "0" },
     "/static/assets/work_images/w3b-scholar.png",
-    "/static/assets/work_images/w3b-scholar.png"
+    "/static/assets/work_images/w3b-scholar.png",
+    "w3b-scholar.jpg"
   ),
   new PolaroidItem(
     3,
     "My Rail Travel",
     2023,
-    "a landmark recommendation app created during MRT Hackathon,\nfeaturing an AR to scan exit signs popping up what destination lies ahead.",
+    "an AR-enabled landmark recommendation app born from the chaos of MRT Hackathon,\nwhere users can scan exit signs and discover what wonders lie ahead.",
     "Tech Lead",
     "/static/assets/work_images/my-rail-travel.gif",
     [
@@ -79,14 +83,15 @@ export const POLAROID_ITEMS = [
     "#",
     { bottom: "-5em", right: "15%", rotate: "8" },
     "/static/assets/work_images/my-rail-travel.gif",
-    "/static/assets/work_images/my-rail-travel.gif"
+    "/static/assets/work_images/my-rail-travel.gif",
+    "my-rail-travel.jpg"
   ),
   new PolaroidItem(
-    4,
+    5,
     "Lug N Loaded",
     2023,
-    "a fast paced 2D puzzle multiplayer game where players act as robbers, they must fit all the goods into 1 luggage.",
-    "Tech Lead & Project Manager",
+    "A heart-pumping, adrenaline-fueled 2D puzzle multiplayer game where you and your friends take on the role of sneaky robbers, racing against time to cram all your stolen loot into a single, unsuspecting luggage.",
+    "Tech Lead & PM",
     "/static/assets/work_images/lug-n-loaded.png",
     [
       "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
@@ -97,13 +102,14 @@ export const POLAROID_ITEMS = [
     "https://drive.google.com/file/d/1eSCJ6wbN6RkXBK3X1TjY1bfG3UpAhjTv/view?usp=sharing",
     { top: "1.5em", right: "22%", rotate: "-10" },
     "/static/assets/work_images/lug-n-loaded.png",
-    "/static/assets/work_images/lug-n-loaded/lugNLoaded-2.png"
+    "/static/assets/work_images/lug-n-loaded/lugNLoaded-2.png",
+    "lug-n-loaded.jpg"
   ),
   new PolaroidItem(
-    5,
+    4,
     "Flanner",
     2023,
-    "family planner, for those who are unsure of what to do during their quality time, get recommendation based on your mutual interests.",
+    "Family planner, born from the chaos of Apple Developer Academy, where my teammates & I were grouped because we all have our family as the closest people near us, and we'd like to spend more quality time with our loved ones.",
     "Tech Lead",
     "/static/assets/work_images/flanner.png",
     [
@@ -114,15 +120,16 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/flanner/id6463742782",
     { bottom: "-1em", right: "-2em", rotate: "24" },
     "/static/assets/work_images/flanner.png",
-    "/static/assets/work_images/flanner/flanner-2.png"
+    "/static/assets/work_images/flanner/flanner-2.png",
+    "flanner.jpg"
   ),
 
   new PolaroidItem(
     6,
     "Pikolo",
     2023,
-    "a cash flow manager, designed and created who wants to keep track of their spending, lending, and more",
-    "Developer, Designer, Product Owner",
+    "A cash flow manager, designed and created on my spare time in Apple Developer Academy, as my first app in the app store, born from my struggle of managing my own cash flow, so I decided to track my cash flow using this app, using emotional buffer (the daily and monthly budget) to budget myself not to overspend",
+    "Creator & Solo Dev",
     "/static/assets/work_images/pikolo.png",
     [
       "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/23-swift-512.png",
@@ -133,13 +140,14 @@ export const POLAROID_ITEMS = [
     "https://apps.apple.com/id/app/pikolo-cash-flow-manager/id6463812788",
     { top: "50%", left: "10%", rotate: "12" },
     "/static/assets/work_images/pikolo.png",
-    "/static/assets/work_images/pikolo/pikolo-2.png"
+    "/static/assets/work_images/pikolo/pikolo-2.png",
+    "pikolo.jpg"
   ),
   new PolaroidItem(
     7,
     "Mission: A1",
     2023,
-    "a first person open world explorative game, where players get to explore not only the map, but also various mechanics.",
+    "An immersive first person open world explorative game, that tells a story of an astronaut who got stuck in an unknown planet on his mission to find minerals to help save earth. he's desperate to go back home to his daughter, but will he make it? the game is full of surprises, and the fate of the astronaut is still unknown... even to me, the developer, as the game has not been published to the public yet, but a full run-through version is ready to play, if you want to play it, just let me know!",
     "Tech Lead",
     "/static/assets/work_images/missionA1.png",
     [
@@ -151,6 +159,7 @@ export const POLAROID_ITEMS = [
     "https://www.linkedin.com/posts/bryan-kevin_unity-unity3d-macos-activity-7135505729792196608-Lr6e?utm_source=share&utm_medium=member_desktop",
     { top: "20%", left: "-3em", rotate: "-20" },
     "/static/assets/work_images/missionA1/missionA1-1.png",
-    "/static/assets/work_images/missionA1/missionA1-2.png"
+    "/static/assets/work_images/missionA1/missionA1-2.png",
+    "mission-a1.jpg"
   ),
 ];
