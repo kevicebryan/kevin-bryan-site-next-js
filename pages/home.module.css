@@ -206,6 +206,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    display: none;
+  }
+}
+
 .content h1 {
   font-weight: 500;
 }

@@ -11,4 +11,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;
+  position: relative;
+}
+
+.gradient_top {
+  position: absolute;
+  z-index: 0;
+  top: 2.5%;
+  right: -10%;
+  opacity: 0.75;
+  transition: all 0.5s;
+  will-change: transform;
+}
+
+.gradient_top:hover,
+.gradient_btm:hover {
+  opacity: 1;
+}
+
+.gradient_btm {
+  position: absolute;
+  z-index: 0;
+  bottom: 10%;
+  left: -25%;
+  rotate: 120deg;
+  opacity: 0.75;
+  transition: all 0.5s;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .gradient_top,
+  .gradient_btm {
+    width: 320px;
+    height: auto;
+  }
 }
