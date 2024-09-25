@@ -62,7 +62,7 @@ export const POLAROID_ITEMS = [
     ],
     ["Next.js", "Firebase"],
     "https://w3b-scholar.vercel.app/",
-    { top: "4em", left: "25%", rotate: "0" },
+    { top: "3em", left: "25%", rotate: "8" },
     "/static/assets/work_images/w3b-scholar.png",
     "/static/assets/work_images/w3b-scholar.png",
     "w3b-scholar.jpg"
@@ -71,7 +71,7 @@ export const POLAROID_ITEMS = [
     3,
     "My Rail Travel",
     2023,
-    "an AR-enabled landmark recommendation app born from the chaos of MRT Hackathon,\nwhere users can scan exit signs and discover what wonders lie ahead.",
+    "AR-enabled landmark recommendation app that emerged from the chaos of the MRT Hackathon. Users can scan exit signs to unveil the exciting wonders that await them. In addition, the app offers a curated list of nearby destinations at each station, aiming to boost local businesses and encourage greater use of public transport in Indonesia. With DiscoverAR, your journey becomes an adventure filled with new experiences just waiting to be explored!",
     "Tech Lead",
     "/static/assets/work_images/my-rail-travel.gif",
     [
@@ -90,7 +90,7 @@ export const POLAROID_ITEMS = [
     5,
     "Lug N Loaded",
     2023,
-    "A heart-pumping, adrenaline-fueled 2D puzzle multiplayer game where you and your friends take on the role of sneaky robbers, racing against time to cram all your stolen loot into a single, unsuspecting luggage.",
+    "A heart-pumping, adrenaline-fueled 2D puzzle multiplayer game where you and your friend take on the role of sneaky robbers, racing against time to cram all your stolen loot into a single, unsuspecting luggage.",
     "Tech Lead & PM",
     "/static/assets/work_images/lug-n-loaded.png",
     [
@@ -109,7 +109,7 @@ export const POLAROID_ITEMS = [
     4,
     "Flanner",
     2023,
-    "Family planner, born from the chaos of Apple Developer Academy, where my teammates & I were grouped because we all have our family as the closest people near us, and we'd like to spend more quality time with our loved ones.",
+    "Flanner (Family Planner) was born from the chaos of the Apple Developer Academy, where my teammates and I found common ground in our desire to prioritize quality time with our loved ones. This app helps you discover activities tailored to your family's mutual hobbies and interests, making it easier to decide what to do together based on your preferences and the current moment. Whether it’s planning a fun outing or a cozy evening at home, Family Planner ensures you make the most of your time with those who matter most.",
     "Tech Lead",
     "/static/assets/work_images/flanner.png",
     [
@@ -118,7 +118,7 @@ export const POLAROID_ITEMS = [
     ],
     ["Swift", "SwiftUI", "CoreData"],
     "https://apps.apple.com/id/app/flanner/id6463742782",
-    { bottom: "-1em", right: "-2em", rotate: "24" },
+    { top: "1em", right: "-1em", rotate: "18" },
     "/static/assets/work_images/flanner.png",
     "/static/assets/work_images/flanner/flanner-2.png",
     "flanner.jpg"
@@ -143,11 +143,30 @@ export const POLAROID_ITEMS = [
     "/static/assets/work_images/pikolo/pikolo-2.png",
     "pikolo.jpg"
   ),
+
   new PolaroidItem(
     7,
+    "Riverse: River Cleaning Platform",
+    2023,
+    "A Laravel-based platform that connects volunteers with river cleanup initiatives, enabling event organization, impact tracking, and community engagement to preserve natural water resources.",
+    "Full Stack",
+    "/static/assets/work_images/riverse.png",
+    [
+      "https://cdn4.iconfinder.com/data/icons/logos-3/256/laravel-512.png",
+      "https://banner2.cleanpng.com/20180411/wre/avf0mauoj.webp",
+    ],
+    ["Laravel", "MySQL"],
+    "",
+    { top: "2%", left: "4em", rotate: "-4" },
+    "/static/assets/work_images/riverse/1.png",
+    "/static/assets/work_images/riverse/2.png",
+    "riverse.jpg"
+  ),
+  new PolaroidItem(
+    8,
     "Mission: A1",
     2023,
-    "An immersive first person open world explorative game, that tells a story of an astronaut who got stuck in an unknown planet on his mission to find minerals to help save earth. he's desperate to go back home to his daughter, but will he make it? the game is full of surprises, and the fate of the astronaut is still unknown... even to me, the developer, as the game has not been published to the public yet, but a full run-through version is ready to play, if you want to play it, just let me know!",
+    "Immerse yourself in an exhilarating first-person open-world explorative game where you step into the shoes of a desperate astronaut stranded on an uncharted planet. On a mission to find vital minerals to save Earth, he faces unimaginable challenges and breathtaking discoveries in this mysterious world. With every passing moment, his thoughts drift to his daughter back home—will he make it back to her? Filled with unexpected twists and heart-pounding surprises, the fate of the astronaut hangs in the balance. As the developer, I know the outcome, but until the game is unveiled to the public, the journey remains shrouded in mystery. A full run-through version is ready for those eager to embark on this adventure—just let me know if you want to play!",
     "Tech Lead",
     "/static/assets/work_images/missionA1.png",
     [
@@ -157,9 +176,27 @@ export const POLAROID_ITEMS = [
     ],
     ["Unity", "SwiftUI", "C#"],
     "https://www.linkedin.com/posts/bryan-kevin_unity-unity3d-macos-activity-7135505729792196608-Lr6e?utm_source=share&utm_medium=member_desktop",
-    { top: "20%", left: "-3em", rotate: "-20" },
+    { top: "25%", left: "-3em", rotate: "-20" },
     "/static/assets/work_images/missionA1/missionA1-1.png",
     "/static/assets/work_images/missionA1/missionA1-2.png",
     "mission-a1.jpg"
+  ),
+  new PolaroidItem(
+    9,
+    "MMS' Multiple Orgs Cash Manager",
+    2024,
+    "MMS Cashflow is a web-based cash flow management system for PT Miryafan Mekaraya Sukses (MMS), a conglomerate with multiple subsidiaries. This centralized platform allows users to input and track income and expenses across all companies while providing real-time status records of debts for each subsidiary. Additionally, users can generate detailed reports and export them in CSV or PDF formats, streamlining financial operations and enhancing cash management insights.",
+    "Full Stack",
+    "/static/assets/work_images/mms-cashflow.png",
+    [
+      "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
+      "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png",
+    ],
+    ["Next.js", "Supabase"],
+    "https://mms-ada-cashflow-app.vercel.app/dashboard",
+    { top: "30%", right: "33%", rotate: "-12" },
+    "/static/assets/work_images/mms-cashflow/1.png",
+    "/static/assets/work_images/mms-cashflow/2.png",
+    "mms-cashflow.jpg"
   ),
 ];

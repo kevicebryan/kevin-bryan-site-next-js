@@ -11,22 +11,25 @@ const Layout = (props) => {
         <title>Kevin Bryan</title>
         <meta
           name="description"
-          content="Welcome to my portfolio website. Kevin is a web developer specializing in React and Next.js."
+          content="Welcome to my portfolio website. Kevin Bryan is a web app developer specializing in building modern and scalable applications."
         />
         <meta
           name="keywords"
-          content="kevin bryan, ada studio, kevicebryan, web developer, react, next.js, portfolio"
+          content="kevin bryan, web developer, web app development, full-stack developer, portfolio, scalable applications"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:title" content="Kevin Bryan" />
+        <meta property="og:title" content="Kevin Bryan - Web App Developer" />
         <meta
           property="og:description"
-          content="Welcome to my portfolio website. Kevin is a web developer specializing in React and Next.js."
+          content="Welcome to my portfolio website. Kevin Bryan is a web app developer specializing in building modern and scalable applications."
         />
         <meta property="og:image" content="/snapshot.png" />
         <meta property="og:url" content="https://www.kevbry.in" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Kevin Bryan" />
+        <meta
+          property="og:site_name"
+          content="Kevin Bryan - Web App Developer"
+        />
       </Head>
       <Navbar />
       {props.children}
