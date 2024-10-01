@@ -11,4 +11,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.gradTop {
+  position: absolute;
+  top: 8%;
+  right: -5%;
+  transform: scale(1.5);
+  transition: ease-in 0.5s;
+}
+
+.gradBtm {
+  position: absolute;
+  bottom: 5%;
+  left: -12%;
+  transform: scale(1.5) rotate(-150deg);
+  transition: ease-in 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .gradTop {
+    scale: 0.8;
+  }
+  .gradBtm {
+    transform: scale(0.8) rotate(-150deg);
+  }
 }

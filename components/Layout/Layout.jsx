@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import Head from "next/head";
 import classes from "./Layout.module.css";
 import Footer from "./Footer";
+import Image from "next/image";
 
 const Layout = (props) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      const gradTop = document.querySelector(`.${classes.gradTop}`);
+      const gradBtm = document.querySelector(`.${classes.gradBtm}`);
+
+      gradTop.style.transform = `translateY(${
+        scrollPosition * 0.2
+      }px) scale(1.8)`;
+      gradBtm.style.transform = `translateY(${
+        scrollPosition * 0.1
+      }px) scale(1.8) rotate(-150deg)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className={classes.container}>
       <Head>
@@ -32,6 +55,20 @@ const Layout = (props) => {
         />
       </Head>
       <Navbar />
+      <Image
+        src="/static/assets/gradient.svg"
+        alt="gradient"
+        width={720}
+        height={520}
+        className={classes.gradTop}
+      />
+      <Image
+        src="/static/assets/gradient.svg"
+        alt="gradient"
+        width={720}
+        height={520}
+        className={classes.gradBtm}
+      />
       {props.children}
       <Footer />
     </div>
