@@ -199,4 +199,21 @@ export const POLAROID_ITEMS = [
     "/static/assets/work_images/mms-cashflow/2.png",
     "mms-cashflow.jpg"
   ),
+  new PolaroidItem(
+    10,
+    "Wedday: Wedding Invitation Generator",
+    2024,
+    "A SaaS web app that makes creating stunning wedding invitations effortless. Users can choose from a selection of professionally crafted designs, fill in their invitation details, and share them with ease. The app also offers options to save invitations as high-quality PDFs or images, making them perfect for both digital sharing and printing. It's the ultimate tool for creating personalized invitations quickly and beautifully!",
+    "Creator & Solo Dev",
+    "/static/assets/work_images/wedday.png",
+    [
+      "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
+    ],
+    ["Next.js"],
+    "https://wedday.vercel.app/",
+    { bottom: "-10%", right: "-3em", rotate: "5" },
+    "/static/assets/work_images/wedday/wedday-1.png",
+    "/static/assets/work_images/wedday/wedday-2.png",
+    "wedday.jpg"
+  ),
 ];

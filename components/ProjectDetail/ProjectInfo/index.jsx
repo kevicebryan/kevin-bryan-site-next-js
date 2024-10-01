@@ -36,7 +36,7 @@ const ProjectInfo = ({ title, role, year, description, techStacks, url }) => {
       </ContentWrapper>
       <ContentWrapper>
         <SubHeader>Tech Stack</SubHeader>
-        <p>made using {formatTechStacks()}</p>
+        <p>built using {formatTechStacks()}</p>
       </ContentWrapper>
       <ActionWrapper>
         <a href={`${url}`} target="_blank" rel="noreferrer">
