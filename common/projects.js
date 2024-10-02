@@ -212,8 +212,8 @@ export const POLAROID_ITEMS = [
     ["Next.js"],
     "https://wedday.vercel.app/",
     { bottom: "-10%", right: "-3em", rotate: "5" },
-    "/static/assets/work_images/wedday/wedday-1.png",
     "/static/assets/work_images/wedday/wedday-2.png",
+    "/static/assets/work_images/wedday/wedday-1.png",
     "wedday.jpg"
   ),
 ];
