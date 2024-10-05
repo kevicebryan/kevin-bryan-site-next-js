@@ -69,7 +69,7 @@ const Layout = (props) => {
         height={520}
         className={classes.gradBtm}
       />
-      {props.children}
+      <div className={classes.childrenContainer}>{props.children}</div>
       <Footer />
     </div>
   );
