@@ -3,6 +3,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+
+.showcaseWrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+  border-radius: 16px;
 }
 
 .o :hover {
@@ -17,7 +27,7 @@
 .kurubu {
   text-align: center;
   transition: ease-in 0.2s;
-  margin-top: 6em;
+  margin-top: 1em;
   font-size: small;
 }
 

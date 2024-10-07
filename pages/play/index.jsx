@@ -7,12 +7,16 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import TextThree from "../../components/3D/TextThree";
 import Spotify from "../../components/Spotify/Spotify";
+import SetupShowcase from "../../components/SetupShowcase";
 
 export default function Play() {
   return (
     <Layout>
       <div className={classes.content}>
-        <iframe
+        <div className={classes.showcaseWrapper}>
+          <SetupShowcase />
+        </div>
+        {/* <iframe
           src="https://my.spline.design/my3davatar-af24a57fab0bbd0414d0c28f23417298/"
           frameborder="0"
           width="100%"
@@ -36,7 +40,8 @@ export default function Play() {
             <TextThree />
           </Suspense>
         </Canvas>
-        {/* <Spotify /> */}
+      */}
+
         <div className={classes.kurubu}>
           <a href="https://www.tokopedia.com/kurubu">
             <h1>Stop by 🫂 my Shop </h1>
