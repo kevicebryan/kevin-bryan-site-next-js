@@ -19,7 +19,11 @@ const ItemInfo = ({
   return (
     <Wrapper onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Circle className="circle" />
-      {isActive ? <OutsideCircle /> : <StaticOutsideCircle />}
+      {isActive ? (
+        <OutsideCircle className="circle" />
+      ) : (
+        <StaticOutsideCircle className="circle" />
+      )}
       <InfoWrapper
         isHovering={isHovering}
         infoPlacement={infoPlacement}
@@ -85,30 +89,41 @@ const InfoWrapper = styled.div`
   ${(props) =>
     props.infoPlacement === "top" &&
     css`
-      top: -9em;
+      top: -7rem;
       flex-direction: column-reverse;
+      @media screen and (max-width: 960px) {
+        top: -6.5rem;
+      }
     `}
 
   ${(props) =>
     props.infoPlacement === "bottom" &&
     css`
-      top: 2.5em;
+      top: 2.5rem;
     `}
 
   ${(props) =>
     props.infoPlacement === "left" &&
     css`
-      top: -3.5em;
-      right: 2.5em;
+      top: -3rem;
+      right: 1.5rem;
       flex-direction: row-reverse;
+
+      /* @media screen and (max-width: 960px) {
+        top: -2.5rem;
+      } */
     `}
 
   ${(props) =>
     props.infoPlacement === "right" &&
     css`
-      top: -3.5em;
-      left: 2.5em;
+      top: -3rem;
+      left: 1.5rem;
       flex-direction: row;
+
+      @media screen and (max-width: 960px) {
+        top: -2.2rem;
+      }
     `}
 
   animation: ${(props) =>
@@ -143,10 +158,11 @@ const InfoWrapper = styled.div`
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #00072dda;
+  background-color: #000;
   border-radius: 12px;
   padding: 12px;
   gap: 12px;
+  backdrop-filter: blur(10px);
 `;
 
 const InfoIcon = styled.div`
@@ -169,6 +185,13 @@ const InfoIcon = styled.div`
     height: auto;
     opacity: 1;
   }
+
+  @media screen and (max-width: 960px) {
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 const Info = styled.div`
@@ -177,8 +200,14 @@ const Info = styled.div`
   align-items: flex-start;
   flex-direction: column;
   gap: 8px;
-  min-width: 240px;
-  max-width: 320px;
+  min-width: max-content;
+  max-width: 240px;
+
+  @media screen and (max-width: 960px) {
+    min-width: max-content;
+    max-width: 200px;
+    gap: 6px;
+  }
 
   & > h5,
   & > p,
@@ -189,10 +218,19 @@ const Info = styled.div`
 
   .name {
     font-size: 1.2em;
+    @media screen and (max-width: 960px) {
+      font-size: 1em;
+    }
   }
   .description {
     font-size: 0.75em;
     opacity: 0.5;
+    max-width: 200px;
+
+    @media screen and (max-width: 960px) {
+      font-size: 0.5em;
+      max-width: 180px;
+    }
   }
 
   .link {
@@ -202,6 +240,14 @@ const Info = styled.div`
     transition: ease-in-out 0.25s;
     opacity: 0.75;
     font-weight: 600;
+
+    @media screen and (max-width: 960px) {
+      font-size: 0.5;
+      & > svg {
+        width: auto;
+        height: 1em;
+      }
+    }
 
     & > svg {
       transition: transform ease-in-out 0.3s, scale ease-in-out 0.15s;
@@ -222,6 +268,7 @@ const Circle = styled.div`
   border-radius: 100%;
   background-color: white;
   z-index: 5;
+  backdrop-filter: blur(10px);
 `;
 
 const Triangle = styled.div`
@@ -233,7 +280,7 @@ const Triangle = styled.div`
     css`
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-bottom: 12px solid #00072dda;
+      border-bottom: 12px solid #000;
     `}
 
   ${(props) =>
@@ -241,13 +288,13 @@ const Triangle = styled.div`
     css`
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-top: 12px solid #00072dda;
+      border-top: 12px solid #000;
     `}
 
   ${(props) =>
     props.infoPlacement === "left" &&
     css`
-      border-left: 12px solid #00072dda;
+      border-left: 12px solid #000;
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
     `}
@@ -255,10 +302,44 @@ const Triangle = styled.div`
   ${(props) =>
     props.infoPlacement === "right" &&
     css`
-      border-right: 12px solid #00072dda;
+      border-right: 12px solid #000;
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
     `}
+
+    @media screen and (max-width: 960px) {
+    ${(props) =>
+      props.infoPlacement === "bottom" &&
+      css`
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #000;
+      `}
+
+    ${(props) =>
+      props.infoPlacement === "top" &&
+      css`
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid #000;
+      `}
+
+  ${(props) =>
+      props.infoPlacement === "left" &&
+      css`
+        border-left: 8px solid #000;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+      `}
+
+  ${(props) =>
+      props.infoPlacement === "right" &&
+      css`
+        border-right: 8px solid #000;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+      `}
+  }
 `;
 
 const OutsideCircle = styled.div`

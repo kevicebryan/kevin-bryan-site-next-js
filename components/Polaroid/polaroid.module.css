@@ -51,16 +51,16 @@
 }
 
 .bubble.role {
-  top: -4em;
-  left: -2em;
+  top: -3em;
+  left: -1em;
 
   color: black;
   background-color: #e9e9eb;
 }
 
 .bubble.desc {
-  bottom: -25%;
-  right: -2em;
+  bottom: -18%;
+  right: -1em;
 
   margin-left: 5em;
 
