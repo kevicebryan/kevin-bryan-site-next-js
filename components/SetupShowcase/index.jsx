@@ -6,11 +6,6 @@ import Image from "next/image";
 const SetupShowcase = () => {
   return (
     <Container className="showcase">
-      {PERIPHERALS.map((peripheral, index) => (
-        <div className={peripheral.id} key={peripheral.id}>
-          <ItemInfo item={peripheral} isActive={index === 0} />
-        </div>
-      ))}
       <Image
         src={"/static/assets/setup.jpeg"}
         alt="setup"
@@ -19,6 +14,11 @@ const SetupShowcase = () => {
         objectFit="contain"
         loading="lazy"
       />
+      {PERIPHERALS.map((peripheral, index) => (
+        <div className={peripheral.id} key={peripheral.id}>
+          <ItemInfo item={peripheral} isActive={index === 0} />
+        </div>
+      ))}
     </Container>
   );
 };
@@ -41,11 +41,19 @@ const Container = styled.div`
   background-color: #32323247;
   border-radius: 16px;
 
+  @media screen and (max-width: 900px) {
+    min-width: auto;
+    width: auto;
+    height: 600px;
+    aspect-ratio: 16/9;
+  }
+
   & > img {
     border-radius: 16px;
     transition: ease-in-out 0.5s;
+    aspect-ratio: 16/9;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   & > div {
@@ -90,8 +98,5 @@ const Container = styled.div`
   .chair {
     bottom: 40%;
     right: 8%;
-  }
-
-  @media screen and (max-width: 768px) {
   }
 `;
