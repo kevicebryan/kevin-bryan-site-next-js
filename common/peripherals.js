@@ -38,14 +38,15 @@ export const PERIPHERALS = [
     "Keychron K6",
     `with Akko clear keycaps and matcha switches`,
     "",
-    "bottom",
+    "top",
     "keyboard"
   ),
   new Peripheral(
     "mic",
     "Razer Seiren Mini",
     `USB microphone, does the job`,
-    "left",
+    "",
+    "right",
     "mic"
   ),
   new Peripheral(
@@ -53,7 +54,7 @@ export const PERIPHERALS = [
     "Macbook Pro M2 2022",
     `Thank you Apple Developer Academy`,
     "",
-    "bottom",
+    "right",
     "laptop"
   ),
   new Peripheral(
@@ -77,7 +78,7 @@ export const PERIPHERALS = [
     "Grandma's Dining Table",
     `She got a new dining table, so I claim this one for work`,
     "",
-    "bottom",
+    "top",
     "desk"
   ),
 

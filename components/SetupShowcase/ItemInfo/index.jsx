@@ -15,6 +15,7 @@ const ItemInfo = ({
   const handleMouseLeave = () => {
     setIsHovering(false);
   };
+
   return (
     <Wrapper onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Circle className="circle" />
@@ -74,6 +75,7 @@ const Wrapper = styled.div`
 `;
 
 const InfoWrapper = styled.div`
+  z-index: 6;
   position: absolute;
   padding: 20px;
   display: ${(props) => (props.isHovering ? "flex" : "none")};
@@ -83,7 +85,7 @@ const InfoWrapper = styled.div`
   ${(props) =>
     props.infoPlacement === "top" &&
     css`
-      top: -10.5em;
+      top: -9em;
       flex-direction: column-reverse;
     `}
 
@@ -141,7 +143,7 @@ const InfoWrapper = styled.div`
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #001686a8;
+  background-color: #00072dda;
   border-radius: 12px;
   padding: 12px;
   gap: 12px;
@@ -153,19 +155,19 @@ const InfoIcon = styled.div`
   width: 40px;
   height: 40px;
   background-color: transparent;
-  outline: 1.5px solid #ffffff41;
+  outline: 1px solid #ffffffd9;
   border-radius: 4px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.9;
 
   & > img {
     object-fit: contain;
     width: 75%;
     height: auto;
-    opacity: 0.5;
+    opacity: 1;
   }
 `;
 
@@ -231,7 +233,7 @@ const Triangle = styled.div`
     css`
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-bottom: 12px solid #001686a8;
+      border-bottom: 12px solid #00072dda;
     `}
 
   ${(props) =>
@@ -239,13 +241,13 @@ const Triangle = styled.div`
     css`
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
-      border-top: 12px solid #001686a8;
+      border-top: 12px solid #00072dda;
     `}
 
   ${(props) =>
     props.infoPlacement === "left" &&
     css`
-      border-left: 12px solid #001686a8;
+      border-left: 12px solid #00072dda;
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
     `}
@@ -253,7 +255,7 @@ const Triangle = styled.div`
   ${(props) =>
     props.infoPlacement === "right" &&
     css`
-      border-right: 12px solid #001686a8;
+      border-right: 12px solid #00072dda;
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent;
     `}
