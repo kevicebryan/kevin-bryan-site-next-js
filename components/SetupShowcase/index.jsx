@@ -6,11 +6,6 @@ import Image from "next/image";
 const SetupShowcase = () => {
   return (
     <Container className="showcase">
-      {PERIPHERALS.map((peripheral, index) => (
-        <div className={peripheral.id} key={peripheral.id}>
-          <ItemInfo item={peripheral} isActive={index === 0} />
-        </div>
-      ))}
       <Image
         src={"/static/assets/setup.jpeg"}
         alt="setup"
@@ -19,6 +14,11 @@ const SetupShowcase = () => {
         objectFit="contain"
         loading="lazy"
       />
+      {PERIPHERALS.map((peripheral, index) => (
+        <div className={peripheral.id} key={peripheral.id}>
+          <ItemInfo item={peripheral} isActive={index % 2 === 0} />
+        </div>
+      ))}
     </Container>
   );
 };
@@ -41,11 +41,19 @@ const Container = styled.div`
   background-color: #32323247;
   border-radius: 16px;
 
+  @media screen and (max-width: 960px) {
+    min-width: auto;
+    width: auto;
+    aspect-ratio: 16/9;
+    height: 480px;
+  }
+
   & > img {
     border-radius: 16px;
     transition: ease-in-out 0.5s;
+    aspect-ratio: 16/9;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   & > div {
@@ -53,8 +61,8 @@ const Container = styled.div`
   }
 
   .monitor {
-    top: 28%;
-    left: 25%;
+    top: 24%;
+    left: 26.5%;
   }
 
   .headphone {
@@ -63,8 +71,12 @@ const Container = styled.div`
   }
 
   .mouse {
-    top: 62%;
-    left: 42%;
+    top: 61%;
+    left: 41.5%;
+
+    .circle {
+      transform: rotate3d(1, 1, 0, -40deg);
+    }
   }
 
   .desk {
@@ -78,20 +90,21 @@ const Container = styled.div`
   }
 
   .mic {
-    left: 13%;
-    bottom: 22%;
+    left: 13.5%;
+    bottom: 20%;
   }
 
   .laptop {
-    bottom: 18%;
-    left: 28%;
+    bottom: 33%;
+    left: 30%;
   }
 
   .chair {
     bottom: 40%;
     right: 8%;
-  }
 
-  @media screen and (max-width: 768px) {
+    .circle {
+      transform: rotate3d(0, 1, 0, 30deg);
+    }
   }
 `;

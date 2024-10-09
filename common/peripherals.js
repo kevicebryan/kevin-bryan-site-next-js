@@ -20,17 +20,17 @@ export const PERIPHERALS = [
   new Peripheral(
     "monitor",
     "Msi Pro Mp242c",
-    `1920x1080 FHD, 23.6", 75hz monitor`,
+    `1920x1080 FHD, 23.6", 75hz monitor (still gets eye strains)`,
     "https://tokopedia.link/7jzNMyP1uNb",
-    "top",
+    "bottom",
     "monitor"
   ),
   new Peripheral(
     "mouse",
-    "Pulsar Xlite Wireless V1",
-    ``,
+    "Pulsar Xlite V1",
+    `100% guarantees no whiff`,
     "https://tokopedia.link/x1waB1i2uNb",
-    "right",
+    "top",
     "mouse"
   ),
   new Peripheral(
@@ -52,7 +52,7 @@ export const PERIPHERALS = [
   new Peripheral(
     "laptop",
     "Macbook Pro M2 2022",
-    `Thank you Apple Developer Academy`,
+    `freebie from Apple Developer Academy <3`,
     "",
     "right",
     "laptop"
@@ -60,15 +60,15 @@ export const PERIPHERALS = [
   new Peripheral(
     "headphone",
     "Sony WH-1000XM4",
-    `Imo the best headphone for its price`,
+    `imo the best for its price`,
     "https://tokopedia.link/ryCKQJy2uNb",
-    "bottom",
+    "top",
     "headphone"
   ),
   new Peripheral(
     "chair",
     "Oxihom FSM6",
-    `Ergonomic with mesh seating and a great lumbar support (top build quaity)`,
+    `great cheek and back support`,
     "https://tokopedia.link/pPDvmjJ2uNb",
     "left",
     "chair"
@@ -76,7 +76,7 @@ export const PERIPHERALS = [
   new Peripheral(
     "desk",
     "Grandma's Dining Table",
-    `She got a new dining table, so I claim this one for work`,
+    `she got a new dining table, so I claim this one for work`,
     "",
     "top",
     "desk"
