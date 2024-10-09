@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-
 import Layout from "../../components/Layout/Layout";
 import classes from "./play.module.css";
 
@@ -8,6 +6,7 @@ import { OrbitControls } from "@react-three/drei";
 import TextThree from "../../components/3D/TextThree";
 import Spotify from "../../components/Spotify/Spotify";
 import SetupShowcase from "../../components/SetupShowcase";
+import Link from "next/link";
 
 export default function Play() {
   return (
@@ -43,10 +42,10 @@ export default function Play() {
       */}
 
         <div className={classes.kurubu}>
-          <a href="https://www.tokopedia.com/kurubu">
-            <h1>Stop by 🫂 my Shop </h1>
-          </a>
-          <p>I&#39;m selling my secondhand items here</p>
+          <Link href="https://www.tokopedia.com/kurubu" target="_blank">
+            <h1>Kev's Garage Sale 🛒</h1>
+          </Link>
+          <p>I&#39;m selling my secondhand items here 👀</p>
         </div>
       </div>
     </Layout>

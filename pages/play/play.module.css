@@ -42,18 +42,20 @@
   font-size: small;
 }
 
-.kurubu h1:hover {
-  scale: 1.1;
-}
-
-.kurubu p {
-  font-weight: 200;
-}
-
 .kurubu h1 {
   font-weight: 300;
   margin-bottom: -0.32em;
   transition: ease-in 0.2s;
+  opacity: 0.5;
+}
+
+.kurubu h1:hover {
+  transform: scale(1.025) translateY(-8px);
+  opacity: 1;
+}
+
+.kurubu p {
+  font-weight: 200;
 }
 
 .spline {
