@@ -19,6 +19,12 @@
   gap: 5em;
 }
 
+.nav .right {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
 .nav .navitem {
   font-size: 28px;
   font-family: monospace;
@@ -35,4 +41,18 @@
 
 .navitem.active {
   text-decoration: underline #0029ff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav .left {
+    gap: 2em;
+  }
+
+  .nav .right {
+    gap: 2em;
+  }
+
+  .nav .navitem {
+    font-size: 20px;
+  }
 }

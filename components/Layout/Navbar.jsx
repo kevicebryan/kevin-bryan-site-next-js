@@ -27,8 +27,8 @@ const Navbar = () => {
               router.pathname === "/about" ? classes.active : ""
             }`}
             data-tooltip-id="about-tooltip"
-            data-tooltip-content="get to know more about me, i guess.."
-            data-tooltip-place="bottom"
+            data-tooltip-content="my background & experience"
+            data-tooltip-place="right"
           >
             About
           </div>
@@ -40,31 +40,49 @@ const Navbar = () => {
             className={`${classes.navitem} ${
               router.pathname.includes("/projects") ? classes.active : ""
             }`}
-            data-tooltip-id="play-tooltip"
-            data-tooltip-content="software projects I have worked on"
+            data-tooltip-id="project-tooltip"
+            data-tooltip-content="projects I took part in"
             data-tooltip-place="left"
           >
             Work
           </div>
         </Link>
-
-        {/* <Link href="/play">
+        <Link href="/play">
           <div
             className={`${classes.navitem} ${
               router.pathname === "/play" ? classes.active : ""
             }`}
             data-tooltip-id="play-tooltip"
-            data-tooltip-content="my experimental stuff"
-            data-tooltip-place="left"
+            data-tooltip-content="come take a look..."
+            data-tooltip-place="bottom"
           >
             Play
           </div>
-        </Link> */}
+        </Link>
       </div>
-      <Tooltip
+      {/* <Tooltip
         id="home-tooltip"
         style={{
-          backgroundColor: " #0029ff",
+          backgroundColor: " #008cff",
+          color: "white",
+          borderRadius: "8px",
+          opacity: "1",
+        }}
+      /> */}
+
+      <Tooltip
+        id="about-tooltip"
+        style={{
+          backgroundColor: " #008cff",
+          color: "white",
+          borderRadius: "8px",
+          opacity: "1",
+        }}
+      />
+      <Tooltip
+        id="project-tooltip"
+        style={{
+          backgroundColor: " #008cff",
           color: "white",
           borderRadius: "8px",
           opacity: "1",
@@ -73,16 +91,7 @@ const Navbar = () => {
       <Tooltip
         id="play-tooltip"
         style={{
-          backgroundColor: " #0029ff",
-          color: "white",
-          borderRadius: "8px",
-          opacity: "1",
-        }}
-      />
-      <Tooltip
-        id="about-tooltip"
-        style={{
-          backgroundColor: " #0029ff",
+          backgroundColor: " #008cff",
           color: "white",
           borderRadius: "8px",
           opacity: "1",
