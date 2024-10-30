@@ -20,7 +20,7 @@ export const PERIPHERALS = [
   new Peripheral(
     "monitor",
     "Msi Pro Mp242c",
-    `1920x1080 FHD, 23.6", 75hz monitor (still gets eye strains)`,
+    `1920x1080 FHD, 23.6", 75hz monitor`,
     "https://tokopedia.link/7jzNMyP1uNb",
     "bottom",
     "monitor"
