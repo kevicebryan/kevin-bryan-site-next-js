@@ -54,7 +54,7 @@ export const PERIPHERALS = [
     "Macbook Pro M2 2022",
     `freebie from Apple Developer Academy <3`,
     "",
-    "right",
+    "top",
     "laptop"
   ),
   new Peripheral(
@@ -62,7 +62,7 @@ export const PERIPHERALS = [
     "Sony WH-1000XM4",
     `imo the best for its price`,
     "https://tokopedia.link/ryCKQJy2uNb",
-    "top",
+    "right",
     "headphone"
   ),
   new Peripheral(
@@ -70,7 +70,7 @@ export const PERIPHERALS = [
     "Oxihom FSM6",
     `great cheek and back support`,
     "https://tokopedia.link/pPDvmjJ2uNb",
-    "left",
+    "right",
     "chair"
   ),
   new Peripheral(

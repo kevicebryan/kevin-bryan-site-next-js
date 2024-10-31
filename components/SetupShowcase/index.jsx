@@ -61,18 +61,24 @@ const Container = styled.div`
   }
 
   .monitor {
-    top: 24%;
-    left: 26.5%;
+    top: 10.5%;
+    right: 26%;
+    .circle {
+      transform: rotate3d(1, 1, 0, 15deg);
+    }
   }
 
   .headphone {
-    left: 52%;
-    bottom: 28%;
+    left: 44.5%;
+    top: 20%;
+    .circle {
+      transform: rotate3d(1, 1, 0, 25deg);
+    }
   }
 
   .mouse {
-    top: 61%;
-    left: 41.5%;
+    bottom: 15%;
+    right: 37.5%;
 
     .circle {
       transform: rotate3d(1, 1, 0, -40deg);
@@ -80,31 +86,31 @@ const Container = styled.div`
   }
 
   .desk {
-    bottom: 15%;
-    right: 33%;
+    top: 52%;
+    left: 31%;
   }
 
   .keyboard {
-    bottom: 18%;
-    left: 40%;
+    bottom: 9.5%;
+    left: 41.5%;
   }
 
   .mic {
-    left: 13.5%;
-    bottom: 20%;
+    left: 26.5%;
+    bottom: 38%;
   }
 
   .laptop {
     bottom: 33%;
-    left: 30%;
+    right: 40%;
   }
 
   .chair {
-    bottom: 40%;
-    right: 8%;
+    top: 35%;
+    left: 5%;
 
     .circle {
-      transform: rotate3d(0, 1, 0, 30deg);
+      transform: rotate3d(0, 1, 0, -15deg);
     }
   }
 `;

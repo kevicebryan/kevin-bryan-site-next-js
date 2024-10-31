@@ -12,9 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
   border-radius: 16px;
-
   transition: ease-in 0.1s;
 }
 
@@ -23,6 +21,7 @@
     width: 90%;
     justify-content: flex-start;
     align-items: flex-start;
+    overflow: scroll;
   }
 }
 
