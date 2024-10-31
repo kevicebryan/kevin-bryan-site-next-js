@@ -53,7 +53,7 @@ const Navbar = () => {
               router.pathname === "/play" ? classes.active : ""
             }`}
             data-tooltip-id="play-tooltip"
-            data-tooltip-content="come take a look..."
+            data-tooltip-content="experimental stuff"
             data-tooltip-place="bottom"
           >
             Play
