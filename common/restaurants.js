@@ -22,7 +22,8 @@ export const RESTAURANTS = [
     description:
       "Great curry noodles with pork, doesn't make you feel heavy when finishing this. They got a good selection of coffee and basque cheesecake too.",
     gMaps: "https://maps.app.goo.gl/eaYFbZx3jrMmMYQq6",
-    image: "",
+    image:
+      "https://assets-pergikuliner.com/Kl6P3ymV1-XhSxrh2jSrMjTx97I=/312x0/smart/https://assets-pergikuliner.com/uploads/image/picture/3249911/picture-1714534083.jpg",
     taste: 5,
     ambience: 5,
     worth: 3.5,
