@@ -20,7 +20,7 @@ export const RESTAURANTS = [
     location: "Kembangan, West Jakarta",
     price: "IDR 45.000",
     description:
-      "Greaty curry noodles with pork, doesn't make you feel heavy when finishing this. They got a good selection of coffee and basque cheesecake too.",
+      "Great curry noodles with pork, doesn't make you feel heavy when finishing this. They got a good selection of coffee and basque cheesecake too.",
     gMaps: "https://maps.app.goo.gl/eaYFbZx3jrMmMYQq6",
     image: "",
     taste: 5,

@@ -1,0 +1,59 @@
+import Image from "next/image";
+import { useState } from "react";
+
+const { styled } = require("styled-components");
+
+const Pinpoint = ({ className, storeName, storeId, setStoreId }) => {
+  const [onHover, setOnHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setOnHover(true);
+    setStoreId(storeId);
+  };
+
+  return (
+    <PinpointContainer className={className}>
+      {onHover && <p>{storeName || "Kev's Coffeestop"}</p>}
+      <Image
+        src="/static/assets/icons/pinpoint.svg"
+        alt="pinpoint"
+        width={32}
+        height={32}
+        objectFit="contain"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={() => setOnHover(false)}
+        priority
+      />
+    </PinpointContainer>
+  );
+};
+
+const PinpointContainer = styled.div`
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  transition: ease-in 0.4s;
+  filter: grayscale() brightness(250%);
+  opacity: 0.75;
+
+  & > p {
+    position: absolute;
+    bottom: 24px;
+    width: 120px;
+    text-align: center;
+
+    transform: rotate(8deg) scale(0.9);
+  }
+
+  &:hover {
+    opacity: 1;
+    filter: none;
+    transform: scale(1.2) rotate(-12deg);
+  }
+`;
+
+export default Pinpoint;
