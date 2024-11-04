@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -22,7 +24,6 @@ const Pinpoint = ({ className, storeName, storeId, setStoreId }) => {
         objectFit="contain"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setOnHover(false)}
-        priority
       />
     </PinpointContainer>
   );

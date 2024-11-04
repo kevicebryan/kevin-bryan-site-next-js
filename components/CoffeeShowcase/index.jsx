@@ -1,11 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import styled from "styled-components";
 import StoreInfo from "./StoreInfo";
 import Pinpoint from "./Pinpoint";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { RESTAURANTS } from "../../common/restaurants";
 
 const CoffeeShowcase = () => {
   const [currStoreId, setStoreId] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
 
   return (
     <Wrapper>
@@ -23,12 +33,15 @@ const CoffeeShowcase = () => {
             height={640}
             objectFit="contain"
           />
-          <Pinpoint
-            className={"point"}
-            storeId={1}
-            storeName={"Naked Papa"}
-            setStoreId={setStoreId}
-          />
+          {RESTAURANTS.map((restaurant) => (
+            <Pinpoint
+              key={restaurant.id}
+              storeId={restaurant.id}
+              storeName={restaurant.name}
+              setStoreId={setStoreId}
+              className={restaurant.className}
+            />
+          ))}
         </MapContainer>
         <StoreInfo currStoreId={currStoreId} />
       </Container>
@@ -64,7 +77,8 @@ const Container = styled.div`
   display: flex;
   gap: 64px;
   padding: 40px;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 24px;
 
   @media screen and (max-width: 960px) {
     display: flex;
@@ -73,11 +87,30 @@ const Container = styled.div`
     gap: 20px;
     padding: 12px;
   }
+
+  .tuku {
+    left: 45%;
+    top: 32%;
+  }
+
+  .naked-papa {
+    left: 25%;
+    top: 23%;
+  }
+  .nirwana {
+    left: 30%;
+    top: 25%;
+  }
+  .kancha {
+    left: 22%;
+    top: 38%;
+  }
 `;
 
 const MapContainer = styled.div`
   position: relative;
   max-width: 50%;
+  margin-top: -32px;
 
   & > img {
     width: 100%;
@@ -90,11 +123,6 @@ const MapContainer = styled.div`
     &:hover {
       opacity: 0.65;
     }
-  }
-
-  .point {
-    left: 25%;
-    top: 25%;
   }
 
   @media screen and (max-width: 960px) {
