@@ -54,6 +54,10 @@ export default CoffeeShowcase;
 const Wrapper = styled.div`
   width: 80%;
   padding: 32px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`
@@ -109,7 +113,8 @@ const Container = styled.div`
 
 const MapContainer = styled.div`
   position: relative;
-  max-width: 50%;
+  width: 40%;
+  min-width: 25rem;
   margin-top: -32px;
 
   & > img {

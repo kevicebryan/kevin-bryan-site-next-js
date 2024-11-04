@@ -143,8 +143,7 @@ const InfoContainer = styled.div`
   border: 1px solid #6c6c6c;
   background-color: #6c6c6c08;
   aspect-ratio: 3/4;
-  min-width: 25%;
-  max-width: 320px;
+  width: 25rem;
   font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 960px) {
