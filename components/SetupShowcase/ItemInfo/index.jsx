@@ -163,6 +163,7 @@ const InfoContainer = styled.div`
   padding: 12px;
   gap: 12px;
   backdrop-filter: blur(10px);
+  width: max-content;
 `;
 
 const InfoIcon = styled.div`

@@ -17,6 +17,35 @@ a {
   cursor: url("/static/assets/cursor/pointer.svg"), pointer;
 }
 
+html {
+  scrollbar-width: thin; /* Set scrollbar width to thin */
+  scrollbar-color: #0044ff #00000000; /* Set thumb and track colors */
+}
+
+/* Customize the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Track background color */
+  border-radius: 12px; /* Optional: round the track corners */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #2122fe; /* Thumb color */
+  border-radius: 12px; /* Optional: round the thumb corners */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2122fe; /* Darken thumb on hover */
+  cursor: url("/static/assets/cursor/pointer.svg"), pointer;
+}
+
 /* 
 * {
   box-sizing: border-box;

@@ -16,9 +16,14 @@ const StoreInfo = ({ currStoreId }) => {
       {currStoreId ? (
         <InfoWrapper>
           <TopContainer>
-            <ProfilePicture>
-              <div className="in"></div>
-            </ProfilePicture>
+            <Link
+              href={"https://www.instagram.com/kurubu____eats/"}
+              target="_blank"
+            >
+              <ProfilePicture>
+                <div className="in"></div>
+              </ProfilePicture>
+            </Link>
             <div className="text">
               <p>{`${RESTAURANTS[currStoreId - 1].name}`}</p>
               <h5>
@@ -125,8 +130,14 @@ const StoreInfo = ({ currStoreId }) => {
         </InfoWrapper>
       ) : (
         <NoInfoWrapper>
-          <h1>Select a point in the map</h1>
-          <h3>to see more information</h3>
+          <Image
+            src="/static/assets/krusty-krab.png"
+            alt="krusty-krab"
+            width={500}
+            height={300}
+          />
+          <h1>Select one of the pins on the map</h1>
+          <h3>{`to see my "unbias" review of their food`}</h3>
         </NoInfoWrapper>
       )}
     </InfoContainer>
@@ -142,8 +153,8 @@ const InfoContainer = styled.div`
   border-radius: 12px;
   border: 1px solid #6c6c6c;
   background-color: #6c6c6c08;
-  aspect-ratio: 3/4;
-  width: 25rem;
+  width: 22.5rem;
+  height: 30.25rem;
   font-family: Arial, Helvetica, sans-serif;
 
   @media screen and (max-width: 960px) {
@@ -178,23 +189,33 @@ const ActionsContainer = styled.div`
 `;
 
 const NoInfoWrapper = styled.div`
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: monospace;
+
+  & > img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
 
   & > h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     padding: 12px;
     color: #ff5100;
   }
   & > h3 {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0 12px;
+    opacity: 0.6;
   }
 
   & > h1,
@@ -240,11 +261,15 @@ const TopContainer = styled.div`
 const ContentContainer = styled.p`
   padding: 0 16px;
   margin: 0;
-  width: 92.5%;
+  width: 91.5%;
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   padding-bottom: 16px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 48px;
 
   & > span {
     font-weight: 600;
@@ -260,12 +285,22 @@ const ProfilePicture = styled.div`
   background: #833ab4;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   border-radius: 100%;
+  transition: ease-in-out 0.3s;
 
   .in {
     width: 85%;
     height: 85%;
     background-color: #003dc2;
     border-radius: 100%;
+    transition: ease-in-out 1s;
+  }
+
+  &:hover {
+    .in {
+      width: 90%;
+      height: 90%;
+      transition: ease-in-out 1s;
+    }
   }
 `;
 
@@ -275,7 +310,9 @@ const ImageWrapper = styled.div`
   & > img {
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 5/4;
+    height: auto;
+
     object-position: center;
     object-fit: cover;
   }

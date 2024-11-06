@@ -52,8 +52,11 @@ const CoffeeShowcase = () => {
 export default CoffeeShowcase;
 
 const Wrapper = styled.div`
-  width: 80%;
+  width: 70%;
   padding: 32px;
+
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,6 +68,8 @@ const Title = styled.h1`
   font-weight: 600;
   font-size: 5.5rem;
   line-height: 5rem;
+
+  margin-left: 12.5%;
 
   & > span {
     color: #ff5100;
@@ -79,8 +84,12 @@ const Title = styled.h1`
 const Container = styled.div`
   width: 100%;
   display: flex;
+
   gap: 64px;
   padding: 40px;
+  margin-left: -8%;
+
+  justify-content: center;
   align-items: flex-start;
   margin-top: 24px;
 
