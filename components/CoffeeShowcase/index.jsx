@@ -118,6 +118,16 @@ const Container = styled.div`
     left: 22%;
     top: 38%;
   }
+
+  .sinilagi {
+    top: 33%;
+    left: 30%;
+  }
+
+  .suasanakopi {
+    bottom: 40%;
+    left: 40%;
+  }
 `;
 
 const MapContainer = styled.div`
