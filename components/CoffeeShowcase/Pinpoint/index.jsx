@@ -44,16 +44,20 @@ const PinpointContainer = styled.div`
   & > p {
     position: absolute;
     bottom: 24px;
-    width: 120px;
+    width: max-content;
     text-align: center;
-
     transform: rotate(8deg) scale(0.9);
+    color: #ffc215;
+    background-color: #1d1d1deb;
+    border-radius: 12px;
+    padding: 8px 12px;
   }
 
   &:hover {
     opacity: 1;
     filter: none;
     transform: scale(1.2) rotate(-12deg);
+    z-index: 10;
   }
 `;
 

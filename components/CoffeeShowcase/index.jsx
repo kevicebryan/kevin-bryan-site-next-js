@@ -37,7 +37,7 @@ const CoffeeShowcase = () => {
             <Pinpoint
               key={restaurant.id}
               storeId={restaurant.id}
-              storeName={restaurant.name}
+              storeName={restaurant.store}
               setStoreId={setStoreId}
               className={restaurant.className}
             />
@@ -132,7 +132,7 @@ const Container = styled.div`
 
 const MapContainer = styled.div`
   position: relative;
-  width: 40%;
+  width: 42.5%;
   min-width: 25rem;
   margin-top: -32px;
 
