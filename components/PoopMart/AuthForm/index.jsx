@@ -114,6 +114,7 @@ const AuthFormContainer = styled.form`
   align-items: center;
   background-color: #ffffffee;
   backdrop-filter: blur(4px);
+  max-width: 20rem;
 
   gap: 12px;
   padding: 12px 24px;
@@ -179,6 +180,7 @@ const VerifyButton = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 20em;
 
   & > p {
     color: black;
