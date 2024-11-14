@@ -66,10 +66,9 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   margin: 0;
   font-weight: 600;
-  font-size: 5.5rem;
-  line-height: 5rem;
-
-  margin-left: 12.5%;
+  font-size: 5.2rem;
+  line-height: 4.8rem;
+  text-align: center;
 
   & > span {
     color: #ff5100;

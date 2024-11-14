@@ -32,7 +32,7 @@ const Container = styled.div`
   align-items: center;
 
   min-width: 900px;
-  max-width: 1280px;
+  max-width: 1080px;
   max-height: 720px;
 
   width: 100%;
